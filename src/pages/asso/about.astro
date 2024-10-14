@@ -1,0 +1,29 @@
+---
+import { TextSection } from '@components/odyssey-theme';
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+
+const seo = {
+	title: 'About | Astro Odyssey Theme',
+	description: 'About Page',
+};
+---
+
+<Layout {seo}>
+  <TextSection narrow>
+    <h1>About the competition</h1>
+    <p>
+      The aim of EPFL’s Sustainable Innovation Competition (SIC) association is to organize a new
+      competition for university student teams working on sustainable technologies.
+    </p>
+    <p>
+      The first edition will be a multi-category event taking
+      place on the 10th to 11th of March 2025.
+    </p>
+    <p>The long term objective is to become a world
+      reference when it comes to the promotion and
+      gathering of pioneering student initiatives working
+      in this field.
+    </p>      
+  </TextSection>
+</Layout>
