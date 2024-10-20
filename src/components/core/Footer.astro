@@ -16,7 +16,7 @@ const { footerSocials, footerLists, copyrightName, background, color, showPlug: 
         <div>
           <slot name="logo" />
         </div>
-        <ul class="footer-socials__list">
+        <!-- <ul class="footer-socials__list">
           {
             footerSocials.map((social) => (
               <li class="footer-socials__item">
@@ -32,9 +32,15 @@ const { footerSocials, footerLists, copyrightName, background, color, showPlug: 
               </li>
             ))
           }
-        </ul>
+        </ul> -->
       </div>
-      {
+      <div class="footer-sponsores__container">
+        <slot name="sponsors 1" />
+      </div>
+      <div class="footer-sponsores__container">
+        <slot name="sponsors 2" />
+      </div>
+      <!-- {
         footerLists.map((list) => (
           <div>
             <p><strong>{list.title}</strong></p>
@@ -47,12 +53,12 @@ const { footerSocials, footerLists, copyrightName, background, color, showPlug: 
             </ul>
           </div>
         ))
-      }
+    } -->
     </div>
-    <div class="footer-copyright__container">
+    <!-- <div class="footer-copyright__container">
       {showPlug && <Plug/>}
       <p>Copyright &copy; {new Date().getFullYear()} {copyrightName}</p>
-    </div>
+    </div> -->
 
   </Container>
 </footer>
@@ -67,10 +73,12 @@ const { footerSocials, footerLists, copyrightName, background, color, showPlug: 
     border-top-right-radius: var(--theme-shape-radius);
   }
   .footer-grid__container {
-    padding: 10vh 0 1rem 0;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-  }
+    grid-template-columns: repeat(3, 1fr); /* Ensure three equal columns */
+    justify-items: center; /* Center logos in each column */
+    gap: 3rem; /* Add gap between logos */
+    padding: 2rem 0; /* Add some padding to separate from other elements */
+  } 
   .footer-socials__list {
     margin: 1rem 0;
     padding: 0;
@@ -101,6 +109,13 @@ const { footerSocials, footerLists, copyrightName, background, color, showPlug: 
   }
   .footer-copyright__container p {
     font-size: var(--font-size-sm);
+  }
+  .footer-sponsores__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%; /* Set width to auto so it adapts to content size */
   }
   @media (max-width: 768px) {
     .footer-grid__container :first-child {

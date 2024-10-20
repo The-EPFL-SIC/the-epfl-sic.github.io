@@ -1,28 +1,34 @@
 ---
 import { Icon } from 'astro-icon/components';
-import { Container, Button } from '@components/odyssey-theme';
+import { Container, 
+		Button, 
+		TextSection,
+		CtaCardSection } from '@components/odyssey-theme';
 import settings from '../../../config/settings.js';
 import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 ---
 
 <Container>
+	<CtaCardSection
+		background="var(--theme-surface-1)"
+		color="var(--theme-on-surface-1)"
+	>
+		<h1>The EPFL Sustainable Innovation Competition</h1>
+	</CtaCardSection>
+	<!-- <TextSection narrow>
+		<h1 class="main_title">The EPFL Sustainable Innovation Competition</h1>
+	</TextSection> -->
 	<section class="hero-section__section">
 		<div class="hero-section__text">
-				<h1>Welcome to EPFL SIC website</h1>
+				<h2>What is EPFL SIC ?</h2>
 				<p>
-					The Sustainability Innovation Competition (SIC) is a competition that aims to promote sustainability 
-					and innovation among students organized at EPFL. The goal is to develop innovative solutions to sustainability 
-					challenges.
+					The aim of <strong>EPFL’s Sustainable Innovation Competition (SIC)</strong> association is to organize a new 
+					competition for university student teams working on sustainable technologies. The first edition will be a 
+					<strong>multi-category event</strong> taking place on the <strong>13th & 14th of March 2025.</strong> 
+					The long term objective is to become a world reference when it comes to the promotion and gathering of 
+					pioneering student initiatives working in this field. 
 				</p>
-				<div class="hero-btns__container">
-					<Button href="/asso/about" customIcon
-						>About the competition
-            <Fragment slot="icon">
-              <Icon name="ic:baseline-chevron-right"/>
-            </Fragment>
-            </Button>
-				</div>
-        {settings.enableThemeSwitcher && <ThemeSwitcher client:only/>}
+        <!-- {settings.enableThemeSwitcher && <ThemeSwitcher client:only/>} -->
 		</div>
 		<div class="hero-section__image">
 				<picture>
@@ -34,38 +40,83 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 				</picture>
 		</div>
 	</section>
+	<TextSection>
+		<div class="hero-section__text_centered">
+			<p>
+				<strong>We want to bring together students, academia & industry at the EPFL campus in Lausanne.</strong>
+			</p>
+		</div>
+	</TextSection>
+	<div id="graph">
+		<img src="/assets/images/graph.svg" alt="Graph"/>
+	</div>
+	<TextSection>
+		<div class="hero-section__text_centered">
+			<p>
+				We are currently welcoming student team applications. We accept applications from multidisciplinary projects 
+				done by teams composed of members currently enrolled in a European university in a bachelors, masters or PhD.
+				<br><br>
+				The winning teams will receive a monetary reward up to 30’000.- and expert coaching for further development of 
+				their projects			
+			</p>
+		</div>
+	</TextSection>
+	<div class="hero-btns__container">
+		<Button href="https://forms.gle/b8MjRh9pw6o1DgqB9" customIcon>
+			Interested in participating
+			<Fragment slot="icon">
+				<Icon name="ic:round-north-east" width="18px" height="18px"/>
+			</Fragment>
+		</Button>
+		<Button href="https://docs.google.com/forms/d/e/1FAIpQLSeSR8U3L16fpSPG1i2OKlz2MVtnFDUylCiH7QcfVcmJ1rnt4A/viewform?usp=sf_link" outlined>Joining the association</Button>
+	</div>
 </Container>
 
 <style>
 	.hero-section__section {
 		margin: var(--section-margin) auto;
-		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
+		/* min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height))); */
+		max-height: 65vh;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
-		gap: 1rem;
+		/* gap: 1rem; */
 	}
 	.hero-section__text {
 		justify-self: center;
+		text-align: center;
 		max-width: 25rem;
+		height: 80%;
+	}
+
+	.hero-section__text_centered {
+		text-align: center;
+		max-width: 80%;
+		margin: 0 auto;
 	}
 	.hero-btns__container {
 		display: flex;
-		align-items: center;
+		align-items: center; /* This keeps the buttons vertically aligned */
+		justify-content: center; /* This centers the buttons horizontally */
 		gap: 1rem;
-	}
-	.hero-btns__container {
 		margin-right: 1rem;
+		text-align: center;
+		margin-bottom: 5rem;
 	}
 	.hero-section__image {
 		display: flex;
 	}
 	.hero-section__image img {
 		width: 100%;
-		height: 100%;
+		height: 80%;
 		max-height: 80vh;
 		object-fit: cover;
 		border-radius: var(--theme-shape-radius);
+	}
+	#graph {
+		margin-top: -7.5%;
+		display: flex;
+		text-align: center;
 	}
 	@media (max-width: 768px) {
 		.hero-section__section {
