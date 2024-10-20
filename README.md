@@ -2,6 +2,8 @@
 
 Welcome to the GitHub repository for the EPFL SIC website. This website is developed using the Astro framework in JavaScript.
 
+You can find the deploy version of the website [here](https://the-epfl-sic.github.io/).
+
 ## Overview
 
 This website is based on the Odyssey theme. You can find more information about the theme [here](https://github.com/treefarmstudio/odyssey-theme).
