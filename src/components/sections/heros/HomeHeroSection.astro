@@ -55,34 +55,37 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 	<Container>
 		<section class="animate-on-scroll animate-left">
 			<div id="timeline">
-				<!-- Embed the SVG content directly here -->
-				<svg width="900" height="400" xmlns="http://www.w3.org/2000/svg">
 					<!-- Box 1 - Registration -->
-					<rect x="30" y="30" width="250" height="340" rx="20" ry="20" fill="#ffe680"/>
-					<text x="155" y="70" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Registration</text>
-					<text x="155" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">OCTOBER 1 -> DECEMBER 31</text>
-					<text x="155" y="160" font-family="Arial" font-size="14" text-anchor="middle">Submit your team application</text>
-					<text x="155" y="180" font-family="Arial" font-size="14" text-anchor="middle">via the registration form.</text>
+					<svg class="timeline-box" viewBox="0 0 250 340" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+						<rect x="0" y="0" width="250" height="340" rx="20" ry="20" fill="#ffe680"/>
+						<text x="125" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Registration</text>
+						<text x="125" y="80" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">OCTOBER 1 -> DECEMBER 31</text>
+						<text x="125" y="130" font-family="Arial" font-size="14" text-anchor="middle">Submit your team application</text>
+						<text x="125" y="150" font-family="Arial" font-size="14" text-anchor="middle">via the registration form.</text>
+					</svg>
 
 					<!-- Box 2 - Preselection -->
-					<rect x="325" y="30" width="250" height="340" rx="20" ry="20" fill="#f5f5f5"/>
-					<text x="450" y="70" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Preselection</text>
-					<text x="450" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">JANUARY 1 -> JANUARY 31</text>
-					<text x="450" y="160" font-family="Arial" font-size="14" text-anchor="middle">Send in the documents for</text>
-					<text x="450" y="180" font-family="Arial" font-size="14" text-anchor="middle">the preselection</text>
-					<text x="450" y="220" font-family="Arial" font-size="14" text-anchor="middle">Teams selected for the</text>
-					<text x="450" y="240" font-family="Arial" font-size="14" text-anchor="middle">competition days will be</text>
-					<text x="450" y="260" font-family="Arial" font-size="14" text-anchor="middle">announced on the 10</text>
-					<text x="450" y="280" font-family="Arial" font-size="14" text-anchor="middle">February 2025</text>
+					<svg class="timeline-box" viewBox="0 0 250 340" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+						<rect x="0" y="0" width="250" height="340" rx="20" ry="20" fill="#f5f5f5"/>
+						<text x="125" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Preselection</text>
+						<text x="125" y="80" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">JANUARY 1 -> JANUARY 31</text>
+						<text x="125" y="130" font-family="Arial" font-size="14" text-anchor="middle">Send in the documents for</text>
+						<text x="125" y="150" font-family="Arial" font-size="14" text-anchor="middle">the preselection</text>
+						<text x="125" y="190" font-family="Arial" font-size="14" text-anchor="middle">Teams selected for the</text>
+						<text x="125" y="210" font-family="Arial" font-size="14" text-anchor="middle">competition days will be</text>
+						<text x="125" y="230" font-family="Arial" font-size="14" text-anchor="middle">announced on the 10</text>
+						<text x="125" y="250" font-family="Arial" font-size="14" text-anchor="middle">February 2025</text>
+					</svg>
 
 					<!-- Box 3 - Competition -->
-					<rect x="620" y="30" width="250" height="340" rx="20" ry="20" fill="#f5f5f5"/>
-					<text x="745" y="70" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Competition</text>
-					<text x="745" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">MARCH 13 & 14</text>
-					<text x="745" y="160" font-family="Arial" font-size="14" text-anchor="middle">Team speeches, Jury</text>
-					<text x="745" y="180" font-family="Arial" font-size="14" text-anchor="middle">deliberation</text>
-				</svg>
-			</div>
+					<svg class="timeline-box" viewBox="0 0 250 340" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+						<rect x="0" y="0" width="250" height="340" rx="20" ry="20" fill="#f5f5f5"/>
+						<text x="125" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Competition</text>
+						<text x="125" y="80" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">MARCH 13 & 14</text>
+						<text x="125" y="130" font-family="Arial" font-size="14" text-anchor="middle">Team speeches, Jury</text>
+						<text x="125" y="150" font-family="Arial" font-size="14" text-anchor="middle">deliberation</text>
+					</svg>
+				</div>
 			<div class="hero-btns__container">
 				<Button href="https://forms.gle/b8MjRh9pw6o1DgqB9" customIcon>
 					Interested in participating
@@ -97,109 +100,178 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 </div>
 
 <style>
-	.full-width {
-		width: 100vw;
-		margin-left: calc(50% - 50vw);
-		padding: var(--section-margin) 0;
-		height: 100vh; /* Set each section to the height of the viewport */
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+  .full-width {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding: var(--section-margin) 0;
+    min-height: 100vh; /* Set each section to the height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-	.hero-section__section {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		align-items: center;
-		justify-content: center;
-		height: 100%; /* Ensure the section takes up the full height */
-	}
+  .hero-section__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure the section takes up the full height */
+  }
 
-	.hero-section__text {
-		justify-self: start;
-		text-align: left;
-		max-width: 25rem;
-		height: auto;
-	}
+  .hero-section__text {
+    justify-self: start;
+    text-align: left;
+    max-width: 25rem;
+    height: auto;
+  }
 
-	.hero-section__text_centered {
-		text-align: center;
-		max-width: 80%;
-		margin: 0 auto;
-	}
+  .hero-section__text_centered {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
 
-	.hero-btns__container {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 1rem;
-		margin-right: 1rem;
-		text-align: center;
-		margin: 2rem;
-	}
+  .hero-btns__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    margin: 2rem;
+  }
 
-	.hero-section__image {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+  .hero-section__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-	.hero-section__image img {
-		width: 100%;
-		height: auto;
-		max-height: 80vh;
-		object-fit: cover;
-		border-radius: var(--theme-shape-radius);
-	}
+  .hero-section__image img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+    border-radius: var(--theme-shape-radius);
+  }
 
-	#graph {
-		margin-top: -7.5%;
-		display: flex;
-		text-align: center;
-	}
+  #graph {
+    margin-top: -7.5%;
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
 
-	#timeline {
-		display: flex;
-		justify-content: center; /* Center the SVG horizontally */
-		text-align: center;
-	}
+  #timeline {
+    display: flex;
+    justify-content: center; /* Center the SVG horizontally */
+    text-align: center;
+    width: 100%;
+    gap: 1rem;
+  }
 
-	#timeline svg {
-		margin: 0 auto; /* Center the SVG within the container */
-	}
+  .timeline-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
 
-	@media (max-width: 768px) {
-		.hero-section__section {
-			grid-template-columns: 1fr;
-		}
-	}
+  .timeline-box svg {
+    width: 100%;
+    height: 100%;
+  }
 
-	/* Animation Styles */
-	.animate-on-scroll {
-		opacity: 0;
-		transition: opacity 1s ease-out, transform 1s ease-out;
-	}
-	.animate-on-scroll.animate-left {
-		transform: translateX(-50px);
-	}
-	.animate-on-scroll.animate-right {
-		transform: translateX(50px);
-	}
-	.animate-on-scroll.visible {
-		opacity: 1;
-		transform: translateX(0);
-	}
+  .timeline-box rect {
+    width: 100%;
+    height: 100%;
+  }
 
-	/* Background Colors */
-	.section-green-1 {
-		background: #FBF4DF;
-	}
-	.section-green-2 {
-		background: #FBF4DF;
-	}
-	.section-green-3 {
-		background: linear-gradient(to bottom, #FBF4DF 0%, #c2efce 75%, #005839 100%);
-	}
+  .timeline-box text {
+    font-size: 0.7rem; /* Adjust font size for better fit */
+    text-anchor: middle;
+  }
+
+  @media (max-width: 768px) {
+    .hero-section__section {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+
+    .hero-section__text {
+      text-align: center;
+      max-width: 100%;
+    }
+
+    .hero-section__image img {
+      max-height: 50vh;
+    }
+
+    #graph {
+      margin-top: 0;
+    }
+
+    #timeline {
+      flex-direction: column;
+      align-items: center; /* Center the rectangles in column mode */
+      gap: 0.5rem; /* Reduce the gap between the rectangles */
+    }
+
+    .timeline-box {
+      width: 100%;
+      height: auto;
+      margin-bottom: 0.5rem; /* Add margin to control spacing */
+	  justify-content: center;
+    }
+
+    .timeline-box svg {
+      width: 100%;
+      height: auto;
+    }
+
+    .timeline-box rect {
+      width: 100%;
+      height: 100%;
+    }
+
+    .timeline-box text {
+      font-size: 0.7rem; /* Adjust font size for better fit */
+      text-anchor: middle;
+    }
+
+    .timeline-box:last-child {
+      margin-bottom: 0; /* Remove margin from the last rectangle */
+    }
+  }
+
+  /* Animation Styles */
+  .animate-on-scroll {
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  .animate-on-scroll.animate-left {
+    transform: translateX(-50px);
+  }
+  .animate-on-scroll.animate-right {
+    transform: translateX(50px);
+  }
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Background Colors */
+  .section-green-1 {
+    background: #FBF4DF;
+  }
+  .section-green-2 {
+    background: #FBF4DF;
+  }
+  .section-green-3 {
+    background: linear-gradient(to bottom, #FBF4DF 0%, #c2efce 75%, #005839 100%);
+  }
 </style>
 
 <script>

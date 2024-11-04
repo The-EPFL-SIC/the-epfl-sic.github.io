@@ -74,7 +74,7 @@ const { navData, rightMenu } = Astro.props;
 <style>
   header {
     width: 100%;
-    padding: 1rem 0.5rem;
+    padding: 1rem 0.5rem; /* Reduce padding to decrease spacing */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,7 +130,7 @@ const { navData, rightMenu } = Astro.props;
   nav ul li a:hover {
     opacity: 1;
   }
-  @media(max-width: 600px) {
+  @media(max-width: 930px) {
     #menuButton {
       display: block;  
       z-index: 100;
@@ -154,9 +154,9 @@ const { navData, rightMenu } = Astro.props;
       align-items: center;
       flex-direction: column;
     }
-     header[mobile-menu-open] nav ul li {
-       font-size: var(--font-size-lg);
-       margin-bottom: 1rem;
-     }
+    header[mobile-menu-open] nav ul li {
+      font-size: var(--font-size-lg);
+      margin-bottom: 1rem;
+    }
   }
 </style>
