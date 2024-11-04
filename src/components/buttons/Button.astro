@@ -30,9 +30,11 @@ const Tag = href ? 'a' : 'button';
     border: none;
     border-radius: var(--theme-button-border-radius);
     font-weight: 500;
+    transition: transform 0.3s ease;
   }
   .btn:hover {
     background-color: var(--theme-primary-hover);
+    transform: scale(1.05);
   }
   .btn--unelevated {
     background-color: transparent;
@@ -46,11 +48,12 @@ const Tag = href ? 'a' : 'button';
     color: var(--theme-primary);
     background-color: transparent;
     border: 2px solid var(--theme-primary);
-    transition: background-color var(--theme-transition);
+    transition: background-color var (--theme-transition), transform 0.3s ease;
   }
   .btn--outlined:hover {
     background-color: var(--theme-primary);
     color: var(--theme-on-primary);
+    transform: scale(1.05);
   }
   .custom-icon__span {
     margin-left: 0.25rem;
