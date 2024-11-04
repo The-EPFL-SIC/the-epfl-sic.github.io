@@ -5,7 +5,7 @@ export const nav = [
 	},
 	{
 		title: 'The Team',
-		slug: '/comingsoon',
+		slug: '/asso/about',
 	},
 	{
 		title: 'Join Us',
