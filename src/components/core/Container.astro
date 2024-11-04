@@ -1,5 +1,5 @@
 ---
-const {narrow} = Astro.props;
+const { narrow } = Astro.props;
 ---
 
 <div class={`content__container ${narrow ? `content__container--narrow` : ``}`}>
@@ -8,9 +8,12 @@ const {narrow} = Astro.props;
 
 <style>
   .content__container {
-    margin: -10;
     max-width: var(--container-max-width);
     padding: var(--container-padding);
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .content__container--narrow {
     max-width: var(--container-max-width-narrow);

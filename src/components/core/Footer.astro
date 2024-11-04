@@ -69,6 +69,9 @@ const { footerSocials, footerLists, copyrightName, background, color, showPlug: 
     --footer-color: var(--theme-on-primary);
     background-color: var(--footer-bg);
     color: var(--footer-color);
+    width: 100vw; /* Ensure the footer spans the entire width of the viewport */
+    margin-left: calc(50% - 50vw); /* Center the footer */
+    position: relative; /* Ensure it stays within the normal document flow */
     /* border-top-left-radius: var(--theme-shape-radius);
     border-top-right-radius: var(--theme-shape-radius); */
   }
@@ -78,6 +81,8 @@ const { footerSocials, footerLists, copyrightName, background, color, showPlug: 
     justify-items: center; /* Center logos in each column */
     gap: 3rem; /* Add gap between logos */
     padding: 2rem 0; /* Add some padding to separate from other elements */
+    max-width: var(--container-max-width); /* Ensure the content stays centered */
+    margin: 0 auto; /* Center the content */
   } 
   .footer-socials__list {
     margin: 1rem 0;
