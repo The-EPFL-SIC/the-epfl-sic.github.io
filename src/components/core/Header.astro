@@ -78,6 +78,8 @@ const { navData, rightMenu } = Astro.props;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--header-bg-color); /* Use variable from theme.css */
+    color: var(--header-text-color); /* Use variable from theme.css */
   }
   header.header--right {
     display: grid;
@@ -106,11 +108,11 @@ const { navData, rightMenu } = Astro.props;
     -webkit-tap-highlight-color: transparent;
   }
   #menuButton > span {
-    color: var(--theme-on-bg);
+    color: inherit;
     vertical-align: middle;
   }
   nav {
-  display: flex;
+    display: flex;
   }
   nav ul {
     margin: 0;
@@ -136,7 +138,7 @@ const { navData, rightMenu } = Astro.props;
     .header-nav__container {
       width: 100%;
       height: 100%;
-      background-color: var(--theme-bg);
+      background-color: var(--header-bg-color); /* Use variable from theme.css */
       display: none;
       flex-direction: column;
       align-items: center;

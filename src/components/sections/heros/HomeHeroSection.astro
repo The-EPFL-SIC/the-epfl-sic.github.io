@@ -8,85 +8,118 @@ import settings from '../../../config/settings.js';
 import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 ---
 
-<Container>
-	<CtaCardSection
-		background="var(--theme-surface-1)"
-		color="var(--theme-on-surface-1)"
-	>
-		<h1>The EPFL Sustainable Innovation Competition</h1>
-	</CtaCardSection>
-	<!-- <TextSection narrow>
-		<h1 class="main_title">The EPFL Sustainable Innovation Competition</h1>
-	</TextSection> -->
-	<section class="hero-section__section">
-		<div class="hero-section__text">
-				<h2>What is EPFL SIC ?</h2>
-				<p>
-					The aim of <strong>EPFL’s Sustainable Innovation Competition (SIC)</strong> association is to organize a new 
-					competition for university student teams working on sustainable technologies. The first edition will be a 
-					<strong>multi-category event</strong> taking place on the <strong>13th & 14th of March 2025.</strong> 
-					The long term objective is to become a world reference when it comes to the promotion and gathering of 
-					pioneering student initiatives working in this field. 
-				</p>
-        <!-- {settings.enableThemeSwitcher && <ThemeSwitcher client:only/>} -->
-		</div>
-		<div class="hero-section__image">
-				<picture>
-					<img
-						src="/assets/images/home/img_home.png"
-						alt="Home Hero Image"
-						id="home-hero-image"
-					/>
-				</picture>
-		</div>
-	</section>
-	<TextSection>
-		<div class="hero-section__text_centered">
-			<p>
-				<strong>We want to bring together students, academia & industry at the EPFL campus in Lausanne.</strong>
-			</p>
-		</div>
-	</TextSection>
-	<div id="graph">
-		<img src="/assets/images/graph.svg" alt="Graph"/>
-	</div>
-	<TextSection>
-		<div class="hero-section__text_centered">
-			<p>
-				We are currently welcoming student team applications. We accept applications from multidisciplinary projects 
-				done by teams composed of members currently enrolled in a European university in a bachelors, masters or PhD.
-				<br><br>
-				The winning teams will receive a monetary reward up to 30’000.- and expert coaching for further development of 
-				their projects			
-			</p>
-		</div>
-	</TextSection>
-	<div class="hero-btns__container">
-		<Button href="https://forms.gle/b8MjRh9pw6o1DgqB9" customIcon>
-			Interested in participating
-			<Fragment slot="icon">
-				<Icon name="ic:round-north-east" width="18px" height="18px"/>
-			</Fragment>
-		</Button>
-		<Button href="https://docs.google.com/forms/d/e/1FAIpQLSeSR8U3L16fpSPG1i2OKlz2MVtnFDUylCiH7QcfVcmJ1rnt4A/viewform?usp=sf_link" outlined>Joining the association</Button>
-	</div>
-</Container>
+<div class="full-width section-green-1">
+	<Container>
+		<section class="hero-section__section animate-on-scroll animate-left">
+			<div class="hero-section__text">
+					<h2>What is EPFL SIC ?</h2>
+					<p>
+						The aim of <strong>EPFL’s Sustainable Innovation Competition (SIC)</strong> association is to organize a new 
+						competition for university student teams working on sustainable technologies. The first edition will be a 
+						<strong>multi-category event</strong> taking place on the <strong>13th & 14th of March 2025.</strong> 
+						The long term objective is to become a world reference when it comes to the promotion and gathering of 
+						pioneering student initiatives working in this field. 
+					</p>
+			</div>
+			<div class="hero-section__image">
+					<picture>
+						<img
+							src="/assets/images/home/img_home.png"
+							alt="Home Hero Image"
+							id="home-hero-image"
+						/>
+					</picture>
+			</div>
+		</section>
+	</Container>
+</div>
+
+<div class="full-width section-green-2">
+	<Container>
+		<section class="animate-on-scroll animate-right">
+			<TextSection>
+				<div class="hero-section__text_centered">
+					<p>
+						<strong>First student-led Sustainability Competition and Forum — gathering students, research and industry</strong>
+					</p>
+				</div>
+			</TextSection>
+			<div id="graph">
+				<img src="/assets/images/graph.svg" alt="Graph"/>
+			</div>
+		</section>
+	</Container>
+</div>
+
+<div class="full-width section-green-3">
+	<Container>
+		<section class="animate-on-scroll animate-left">
+			<div id="timeline">
+				<!-- Embed the SVG content directly here -->
+				<svg width="900" height="400" xmlns="http://www.w3.org/2000/svg">
+					<!-- Box 1 - Registration -->
+					<rect x="30" y="30" width="250" height="340" rx="20" ry="20" fill="#ffe680"/>
+					<text x="155" y="70" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Registration</text>
+					<text x="155" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">OCTOBER 1 -> DECEMBER 31</text>
+					<text x="155" y="160" font-family="Arial" font-size="14" text-anchor="middle">Submit your team application</text>
+					<text x="155" y="180" font-family="Arial" font-size="14" text-anchor="middle">via the registration form.</text>
+
+					<!-- Box 2 - Preselection -->
+					<rect x="325" y="30" width="250" height="340" rx="20" ry="20" fill="#f5f5f5"/>
+					<text x="450" y="70" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Preselection</text>
+					<text x="450" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">JANUARY 1 -> JANUARY 31</text>
+					<text x="450" y="160" font-family="Arial" font-size="14" text-anchor="middle">Send in the documents for</text>
+					<text x="450" y="180" font-family="Arial" font-size="14" text-anchor="middle">the preselection</text>
+					<text x="450" y="220" font-family="Arial" font-size="14" text-anchor="middle">Teams selected for the</text>
+					<text x="450" y="240" font-family="Arial" font-size="14" text-anchor="middle">competition days will be</text>
+					<text x="450" y="260" font-family="Arial" font-size="14" text-anchor="middle">announced on the 10</text>
+					<text x="450" y="280" font-family="Arial" font-size="14" text-anchor="middle">February 2025</text>
+
+					<!-- Box 3 - Competition -->
+					<rect x="620" y="30" width="250" height="340" rx="20" ry="20" fill="#f5f5f5"/>
+					<text x="745" y="70" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Competition</text>
+					<text x="745" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">MARCH 13 & 14</text>
+					<text x="745" y="160" font-family="Arial" font-size="14" text-anchor="middle">Team speeches, Jury</text>
+					<text x="745" y="180" font-family="Arial" font-size="14" text-anchor="middle">deliberation</text>
+				</svg>
+			</div>
+			<div class="hero-btns__container">
+				<Button href="https://forms.gle/b8MjRh9pw6o1DgqB9" customIcon>
+					Interested in participating
+					<Fragment slot="icon">
+						<Icon name="ic:round-north-east" width="18px" height="18px"/>
+					</Fragment>
+				</Button>
+				<Button href="https://docs.google.com/forms/d/e/1FAIpQLSeSR8U3L16fpSPG1i2OKlz2MVtnFDUylCiH7QcfVcmJ1rnt4A/viewform?usp=sf_link" outlined>Joining the association</Button>
+			</div>
+		</section>
+	</Container>
+</div>
 
 <style>
+	.full-width {
+		width: 100vw;
+		margin-left: calc(50% - 50vw);
+		padding: var(--section-margin) 0;
+		height: 100vh; /* Set each section to the height of the viewport */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 	.hero-section__section {
-		margin: var(--section-margin) auto;
-		/* min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height))); */
-		max-height: 65vh;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
-		/* gap: 1rem; */
+		justify-content: center;
+		height: 100%; /* Ensure the section takes up the full height */
 	}
+
 	.hero-section__text {
-		justify-self: center;
-		text-align: center;
+		justify-self: start;
+		text-align: left;
 		max-width: 25rem;
-		height: 80%;
+		height: auto;
 	}
 
 	.hero-section__text_centered {
@@ -94,33 +127,93 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 		max-width: 80%;
 		margin: 0 auto;
 	}
+
 	.hero-btns__container {
 		display: flex;
-		align-items: center; /* This keeps the buttons vertically aligned */
-		justify-content: center; /* This centers the buttons horizontally */
+		align-items: center;
+		justify-content: center;
 		gap: 1rem;
 		margin-right: 1rem;
 		text-align: center;
-		margin-bottom: 5rem;
+		margin: 2rem;
 	}
+
 	.hero-section__image {
 		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
+
 	.hero-section__image img {
 		width: 100%;
-		height: 80%;
+		height: auto;
 		max-height: 80vh;
 		object-fit: cover;
 		border-radius: var(--theme-shape-radius);
 	}
+
 	#graph {
 		margin-top: -7.5%;
 		display: flex;
 		text-align: center;
 	}
+
+	#timeline {
+		display: flex;
+		justify-content: center; /* Center the SVG horizontally */
+		text-align: center;
+	}
+
+	#timeline svg {
+		margin: 0 auto; /* Center the SVG within the container */
+	}
+
 	@media (max-width: 768px) {
 		.hero-section__section {
 			grid-template-columns: 1fr;
 		}
 	}
+
+	/* Animation Styles */
+	.animate-on-scroll {
+		opacity: 0;
+		transition: opacity 1s ease-out, transform 1s ease-out;
+	}
+	.animate-on-scroll.animate-left {
+		transform: translateX(-50px);
+	}
+	.animate-on-scroll.animate-right {
+		transform: translateX(50px);
+	}
+	.animate-on-scroll.visible {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	/* Background Colors */
+	.section-green-1 {
+		background: #FBF4DF;
+	}
+	.section-green-2 {
+		background: #FBF4DF;
+	}
+	.section-green-3 {
+		background: linear-gradient(to bottom, #FBF4DF 0%, #c2efce 75%, #005839 100%);
+	}
 </style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+				}
+			});
+		}, { threshold: 0.3 });
+
+		document.querySelectorAll('.animate-on-scroll').forEach(section => {
+			observer.observe(section);
+		});
+	});
+</script>

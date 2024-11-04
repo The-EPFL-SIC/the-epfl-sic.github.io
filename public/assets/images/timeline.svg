@@ -1,0 +1,27 @@
+<svg width="900" height="400" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Box 1 - Registration -->
+  <rect x="30" y="30" width="250" height="340" rx="20" ry="20" fill="#ffe680"/>
+  <text x="155" y="70" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Registration</text>
+  <text x="155" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">OCTOBER 1 -> DECEMBER 31</text>
+  <text x="155" y="160" font-family="Arial" font-size="14" text-anchor="middle">Submit your team application</text>
+  <text x="155" y="180" font-family="Arial" font-size="14" text-anchor="middle">via the registration form.</text>
+
+  <!-- Box 2 - Preselection -->
+  <rect x="325" y="30" width="250" height="340" rx="20" ry="20" fill="#f5f5f5"/>
+  <text x="450" y="70" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Preselection</text>
+  <text x="450" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">JANUARY 1 -> JANUARY 31</text>
+  <text x="450" y="160" font-family="Arial" font-size="14" text-anchor="middle">Send in the documents for</text>
+  <text x="450" y="180" font-family="Arial" font-size="14" text-anchor="middle">the preselection</text>
+  <text x="450" y="220" font-family="Arial" font-size="14" text-anchor="middle">Teams selected for the</text>
+  <text x="450" y="240" font-family="Arial" font-size="14" text-anchor="middle">competition days will be</text>
+  <text x="450" y="260" font-family="Arial" font-size="14" text-anchor="middle">announced on the 10</text>
+  <text x="450" y="280" font-family="Arial" font-size="14" text-anchor="middle">February 2025</text>
+
+  <!-- Box 3 - Competition -->
+  <rect x="620" y="30" width="250" height="340" rx="20" ry="20" fill="#f5f5f5"/>
+  <text x="745" y="70" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Competition</text>
+  <text x="745" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">MARCH 13 & 14</text>
+  <text x="745" y="160" font-family="Arial" font-size="14" text-anchor="middle">Team speeches, Jury</text>
+  <text x="745" y="180" font-family="Arial" font-size="14" text-anchor="middle">deliberation</text>
+</svg>
