@@ -261,7 +261,7 @@ function Labs() {
                     "FR": "formulaire de contact laboratoires",
                     "EN": "labs contact form"
                 },
-                "to": ""
+                "to": "https://forms.gle/HYVjcZ8vYw9bY5GbA"
             }
         },
         "let-s-work-together": {

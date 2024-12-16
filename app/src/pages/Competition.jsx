@@ -45,7 +45,7 @@ function Competition() {
                 "FR": "ce formulaire",
                 "EN": "this form"
             },
-            "to": ""
+            "to": "https://forms.gle/CWgb5uaqsQasFxQ76"
         },
         "deadline": {
             "FR": "Deadline le 31 Decembre 2024",
