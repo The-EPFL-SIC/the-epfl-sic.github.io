@@ -1,0 +1,9 @@
+.react-pdf__Page {
+    margin-bottom: 10px; /* Adjust spacing */
+    z-index: 1;
+}
+
+.pdf-container {
+    max-width: 1200px;
+    margin-inline: auto;
+}

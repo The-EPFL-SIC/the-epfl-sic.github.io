@@ -1,0 +1,48 @@
+.profile-per-category {
+    padding-block: 2rem;
+}
+
+.category-header {
+    width: 95%;
+    max-width: 1500px;
+    min-width: 300px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.category-header .stripes {
+    background-color: white;
+    height: 2px;
+    flex-grow: 1;
+}
+
+.category-header h2 {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.profile-gallery {    
+    width: 70%;
+    max-width: 1200px;
+    min-width: 300px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4rem;
+}
+
+@media (max-width: 680px) {
+    .category-header .stripes {
+        display: none;
+    }
+    .category-header {
+        justify-content: left;
+    }
+}

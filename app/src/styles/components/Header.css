@@ -1,0 +1,202 @@
+:root {
+    --grey-1-color: rgba(250, 244, 225, 0.5);
+    --grey-1-without-transparent: rgb(152, 152, 132);
+    --grey-2-color: rgba(255, 255, 255, 0.688);
+    --grey-3-color: rgba(77, 77, 60, 0.8);
+    --creme-color: rgb(250, 244, 225);
+    --green-color: rgb(0, 88, 57);
+}
+
+@font-face {
+    font-family: "Space mono bold";
+    src: url("../../assets/fonts/SpaceMono-Bold.ttf");
+}
+
+header {
+    font-family: "Space mono bold", sans-serif;
+    border-radius: 20px;
+    background-color: var(--grey-1-color);  
+    margin-inline: 1rem;
+    width: auto;
+    padding-inline: 1.2rem;
+    padding-block: 0;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 5rem;
+    margin-block: 1rem;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 100%;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+@media(max-width: 400px) {
+    .logo img {
+        height: 70%;
+    }
+}
+
+.nav-elem {
+    position: relative;
+    height: 3rem;
+    padding: 0rem;
+    margin: 0;
+}
+
+nav[class="desktop"] > a {
+    font-size: 1.2rem;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    color: white;
+    background-color: var(--green-color);
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 100ms transform;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+header button {
+    width: 4rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: arial;
+    color: var(--grey-3-color);
+    text-shadow: 0px 0px 3px var(--grey-2-color);
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+nav[class="desktop"]{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav[class="opened-mobile-menu"] {
+    z-index: 2;
+    display: flex;
+    color: red;
+    top: 8.4rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    height: auto;
+    position: absolute;
+    width: auto;
+    background-color: var(--grey-1-without-transparent);  
+    border-radius: 0px 0px 20px 20px;
+    padding: 1rem;
+    overflow-y: scroll;
+    will-change: transform;
+}
+
+nav[class="opened-mobile-menu"]::-webkit-scrollbar {
+    display: none;
+}
+
+nav[class="opened-mobile-menu"] h2 {
+    color: var(--green-color);
+    font-family: "Space mono bold", Arial;
+}
+
+nav[class="opened-mobile-menu"] a {
+    display: block;
+    text-decoration: none;
+    color: var(--green-color);
+    margin-left: 1rem;
+    width: fit-content;
+    font-size: 1.1rem;
+    &:hover {
+        color: white;
+    }
+}
+
+nav[class="opened-mobile-menu"] button {
+    display: block;
+    border: none;
+    background: none;
+    margin-left: 1rem;    
+    font-size: 1.1rem;
+    color: var(--green-color);
+    cursor: pointer;
+    &:hover {
+        color: white;
+    }
+}
+
+nav[class="opened-mobile-menu"] .contact-button {
+    display: block;
+    border: none;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    background: none;
+    margin-left: 1rem;    
+    font-size: 1.1rem;
+    margin-block: 1rem;
+    margin-inline: auto;
+    border-radius: 20px;
+    background-color: var(--green-color);
+    color: white;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+/* mobile version of the header */
+@media(max-width: 725px){
+    nav[class="desktop"]{
+        display: none;
+    }
+    nav[class="closed-mobile-menu"] {
+        display: none;
+    }
+    nav[class="opened-mobile-menu"] {
+        display: block;
+    }
+    header[class="mobile-menu-is-open"] {
+        background-color: var(--grey-1-without-transparent);
+        border-radius: 20px 20px 0px 0px;
+    }
+    header button {
+        display: block;
+    }
+}
+
+@media(max-width: 370px){
+    .logo {
+        height: 3rem;
+    }
+    nav[class="opened-mobile-menu"] {
+        top: 6.4rem;
+    }
+}
+
+/* desktop version of the header */
+@media(min-width: 725px){
+    nav[class="desktop"] {
+        display: flex;
+    }
+    nav[class="closed-mobile-menu"], nav[class="opened-mobile-menu"] {
+        display: none;        
+    }
+    header button {
+        display: none;
+    } 
+}
