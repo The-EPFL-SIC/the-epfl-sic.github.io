@@ -22,5 +22,6 @@ pnpm-debug.log*
 icon.d.ts
 *.cache
 
+
 # Astro
 .astro/settings.json
