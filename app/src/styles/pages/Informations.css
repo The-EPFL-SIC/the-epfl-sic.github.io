@@ -1,0 +1,93 @@
+@font-face{
+    font-family: "Space Mono Bold";
+    src: url('../../assets/fonts/SpaceMono-Bold.ttf');
+}
+
+main h1 {
+    font-size: 1.7rem;
+    max-width: 1400px;
+    text-align: justify;
+}
+
+@media (max-width: 400px){
+    main h1 {
+        text-align: left;
+    }
+}
+
+main h2 {
+    font-size: 1.4rem;
+}
+
+main h2 a {
+    text-decoration: none;
+    color: green;
+    text-shadow: 3px 3px 3px black;
+    &:hover {
+        font-size: 1.3rem;
+    }
+    white-space: nowrap;
+}
+
+main p {
+    max-width: 1200px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+@media (max-width: 400px){
+    main p {
+        text-align: left;
+    }
+}
+
+
+main li {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-block: 1rem;
+    max-width: 1000px;
+    color: white;
+
+}
+
+@media (max-width: 400px){
+    main li {
+        text-align: left;
+    }
+}
+
+.benefits-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.benefits-header img {
+    height: 3rem;
+}
+
+li strong {
+    font-family: "Space Mono Bold", Arial;
+}
+
+.margin-top-h2 {
+    margin-top: 3rem;
+}
+
+.contact-form-button {
+    display: block;
+    width: fit-content;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    &:hover {
+        transform: scale(1.1);
+    }
+}

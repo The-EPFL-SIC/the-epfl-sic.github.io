@@ -1,0 +1,251 @@
+:root {
+    --grey-1-color: rgba(250, 244, 225, 0.5); 
+    --grey-2-color: rgba(255, 255, 255, 0.688);
+    --grey-3-color: rgba(77, 77, 60, 0.8);
+    --creme-color: rgb(250, 244, 225);
+    --creme-2-color: rgb(246, 239, 213);
+    --green-color: rgb(0, 88, 57);
+    --green-2-color: rgb(18, 34, 18);
+    --green-3-color: rgb(14, 24, 15);
+}
+
+@font-face{
+    font-family: "Space Mono Bold";
+    src: url('../../assets/fonts/SpaceMono-Bold.ttf');
+}
+
+.welcome-page {
+    min-height: calc(100vh - 2rem);
+    background-size: cover;
+    padding-top: 2rem;
+}
+
+.welcome-page article {
+    min-height: calc(100vh - 8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--creme-color);
+    padding-left: 3rem;
+}
+
+.welcome-page article h1 {
+    font-size: 4rem;
+    font-family: "Space Mono Bold", Arial;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.welcome-page article p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding-right: 1rem;
+}
+
+.welcome-page article strong {
+    font-size: 1.6rem;
+    font-family: "Space Mono Bold", Arial;
+}
+
+.sic-presentation {
+    background: linear-gradient(var(--green-3-color), rgb(61, 85, 56), var(--grey-1-color));
+}
+
+.partners {
+    background-color: var(--grey-1-color);
+    padding-block: 3rem;
+}
+
+.partners hr {
+    width: 80%;
+    border: 1px solid var(--creme-color);
+}
+
+.partners h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    font-family: "Space Mono Bold", Arial;
+    color: var(--creme-color);
+}
+
+.partners .gallery {
+    width: 80%;
+    margin-inline: auto;
+    padding-block: 3rem;
+    padding-inline: 1rem;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.partners .gallery img {
+    height: 4rem;
+    max-width: 300px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.sic-presentation {
+    padding-block: 3rem;
+}
+
+.competition-presentation {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rem;
+    justify-content: space-around;
+    min-height: 500px;
+}
+
+.competition-presentation .image {
+    width: 30%;
+    top: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background-image: url('../../assets/images/photo_biodiversite.png');
+    background-size: cover;
+    position: relative;
+    max-width: 500px;
+}
+
+.competition-presentation .text {
+    width: 60%;
+    text-align: center;
+    color: var(--creme-2-color);
+    max-width: 1200px;
+}
+
+.competition-presentation .text a {
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
+    aspect-ratio: 1;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background-color: var(--creme-2-color);
+    border-radius: 50%;
+    &:hover {
+        background-color: white;
+    }
+}
+
+@media(max-width: 650px) {
+    .competition-presentation .image  {
+        display: none;
+    }
+
+    .competition-presentation .text {
+        width: 90%;
+    }
+}
+
+.competition-actor {
+    position: relative;
+    height: fit-content;
+    max-width: 700px;
+    min-width: 350px;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.competition-actor img {
+    width: 100%;
+}  
+
+.competition-actor a, .competition-actor p {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.competition-actor .link-to-student {
+    top: 15%;
+    left: 0%;
+}
+
+.competition-actor .link-to-lab {
+    top: 15%;
+    right: 10%;
+}
+
+.competition-actor .link-to-public {
+    bottom: 15%;
+    right: 10%;
+}
+
+.competition-actor .link-to-companies{
+    bottom: 15%;
+    left: 0%;
+}
+
+@media (max-width: 650px) {
+    .competition-actor a, .competition-actor p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (orientation: portrait) {
+    .welcome-page {
+        background-image: url('../../assets/images/photo_mobile.jpg');
+    }
+}
+
+@media (orientation: landscape) {
+    .welcome-page {
+        background-image: url('../../assets/images/photo_desktop.jpg');
+    }
+}
+
+@media (max-width: 650px) {
+    .welcome-page article {
+        padding-left: 2rem;
+    }
+    .welcome-page article h1 {
+        font-size: 3rem;
+    }
+    .welcome-page article p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }    
+    .welcome-page article strong {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+    .partners h2 {
+        font-size: 1.7rem;
+    }
+    .partners .gallery { 
+        padding-inline: 0px;
+    }
+}
+
+@media (max-width: 370px) {
+    .welcome-page article h1 {
+        font-size: 2rem;
+    }  
+
+    .partners .gallery img {
+        height: 3rem;
+        max-width: 300px;
+    }
+}

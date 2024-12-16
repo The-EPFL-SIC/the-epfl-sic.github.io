@@ -1,0 +1,78 @@
+footer {
+    padding-block: 2rem;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgb(32, 33, 27);
+}
+
+footer article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+footer > p {
+    text-align: center;
+    color: white;
+}
+
+footer .social-networks-links > div, footer .desktop-language-changer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .social-networks-links > div{
+    gap: 2rem;
+}
+
+
+footer .social-networks-links > p, footer .desktop-language-changer > p {
+    text-align: center;
+    color: white;
+}
+
+footer .social-networks-links svg {
+    height: 3rem;
+    width: 3rem;
+    fill: white;
+    transition: fill 250ms;
+    &:hover {
+        fill: green;
+    }
+}
+
+footer .desktop-language-changer div p {
+    color: grey;
+}
+
+footer .desktop-language-changer button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2.4rem;
+    cursor: pointer;
+    transition: color 250ms;
+    &:hover {
+        text-shadow: 0px 0px 5px black;
+        color: green;
+    }
+}
+
+/* mobile version of the footer */
+@media(max-width: 725px){
+    .desktop-language-changer {
+        display: none;
+    }
+}
+
+/* desktop version of the footer */
+@media(min-width: 725px){
+    .desktop-language-changer {
+        display: block;
+    }
+}

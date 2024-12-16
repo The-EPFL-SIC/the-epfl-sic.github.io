@@ -1,0 +1,14 @@
+.timeline {
+    width: 90%;
+    min-width: 300px;
+    max-width: 1200px;
+    margin-inline: auto;
+    display: block;
+    margin-block: 3rem;
+}
+
+@media(max-width: 750px) {
+    .timeline {
+        width: 100%;
+    }
+}

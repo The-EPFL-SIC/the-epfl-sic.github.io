@@ -1,0 +1,35 @@
+@font-face{
+    font-family: "Space Mono Regular";
+    src: url('../assets/fonts/SpaceMono-Regular.ttf');
+}
+
+body {
+    margin: 0;    
+    font-family: "Space Mono Regular", sans-serif;
+    background-color: rgb(32, 33, 27);
+}
+
+.special-char {
+    font-family: sans-serif;
+}
+
+.flexer {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh);
+}
+
+.main {
+    flex-grow: 1;
+    padding-top: 2rem;
+    background: linear-gradient(rgb(37, 72, 30), rgb(67, 93, 62), rgb(92, 81, 71));
+}
+
+.main main {
+    color: white;
+    padding: 2rem;
+}
+
+h1 a {
+    color: white;
+}
