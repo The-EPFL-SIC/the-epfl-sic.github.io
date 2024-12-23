@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import ProfileCard from '../components/ProfileCard'
@@ -20,6 +20,11 @@ function Members() {
     // the default language of the website is english
     let storedLang = localStorage.getItem('prefered-language') ?? "EN"; 
     let [lang, changeLang] = useState(storedLang);
+
+    useEffect(function() {
+        window.scrollTo(0, 0);
+        document.title = `${(lang === "FR")? "membres" : "members"} | EPFL Sustainable Innovation Challenge`;
+    }, [])
 
     function saveAndChangeLang(language) {
         switch(language) {
@@ -122,6 +127,16 @@ function Members() {
                     },
                     "linkedin": "https://www.linkedin.com/in/stelioslemos/",
                     "people_epfl": "https://people.epfl.ch/stelios.lemos"
+                },
+                {
+                    "name": "Laurène Tribolet",
+                    "profile-picture": Laurene,
+                    "role": {
+                        "FR": "Contact jury",
+                        "EN": "Jury outreach"
+                    },
+                    "linkedin": "https://www.linkedin.com/in/laurene-tribolet/?original_referer=https://www.google.com/&originalSubdomain=ch",
+                    "people_epfl": "https://people.epfl.ch/laurene.tribolet"
                 }
             ]  
         },
@@ -220,16 +235,6 @@ function Members() {
                     },
                     "linkedin": "https://www.linkedin.com/in/basile-costes-5087b2180/",
                     "people_epfl": "https://people.epfl.ch/basile.costes"
-                },
-                {
-                    "name": "Laurène Tribolet",
-                    "profile-picture": Laurene,
-                    "role": {
-                        "FR": "Contact jury",
-                        "EN": "Jury outreach"
-                    },
-                    "linkedin": "https://www.linkedin.com/in/laurene-tribolet/?original_referer=https://www.google.com/&originalSubdomain=ch",
-                    "people_epfl": "https://people.epfl.ch/laurene.tribolet"
                 }
             ]  
         },

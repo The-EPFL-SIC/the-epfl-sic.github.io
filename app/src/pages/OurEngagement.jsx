@@ -15,6 +15,11 @@ function OurEngagement() {
     let storedLang = localStorage.getItem('prefered-language') ?? "EN"; 
     let [lang, changeLang] = useState(storedLang);
 
+    useEffect(function() {
+        window.scrollTo(0, 0);
+        document.title = `${(lang === "FR")? "notre engagement" : "our engagement"} | EPFL Sustainable Innovation Challenge`;
+    }, [])
+
     function saveAndChangeLang(language) {
         switch(language) {
             case "FR":

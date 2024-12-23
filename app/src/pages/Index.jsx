@@ -62,28 +62,32 @@ function Index() {
             "EN": "Companies & NGOs"
         },
         "sic-presentation-1": {
-            "FR": "(à traduire)",
+            "FR": "Rejoignez-nous au RLC de Lausanne (EPFL) pour un événement de deux jours dédié à la durabilité, avec un forum réunissant entreprises et monde académique ainsi qu’un challenge étudiant.",
             "EN": "Join us at the RLC in Lausanne (EPFL) for a two-day event dedicated to sustainability, featuring a company and academia forum alongside a student challenge."
         },
         "sic-presentation-2": {
-            "FR": "(à traduire)",
+            "FR": "Notre focus : la réduction des émissions, la restauration de la biodiversité et des solutions alignées avec les ODD.",
             "EN": "Our focus: emission reductions, bioodiversity restoration, and solutions aligned with the SDGs."
         },
         "sic-presentation-3": {
-            "FR": "(à traduire)",
+            "FR": "Nous promouvons l'innovation sociale, économique et technologique, en mettant en avant des approches diversifiées qui privilégient la réduction de la consommation et un progrès durable.",
             "EN": "We promote social, economic and technological innovation, showcasing diverse approaches that emphasize reduced consumption and sustainable progress."
+        },
+        "sic-presentation-4": {
+            "FR": "Ceci est un nouvel événement.",
+            "EN": "This is a new event."
+        },
+        "sic-presentation-5": {
+            "FR": "Nous voulons le construire avec vous.",
+            "EN": "We want to build it with you."
         },
         "our-chart": {
             "FR": "Notre charte",
             "EN": "Our charter"
         },
-        "sic-presentation-4": {
-            "FR": "(à traduire)",
-            "EN": "This is a new event."
-        },
-        "sic-presentation-5": {
-            "FR": "(à traduire)",
-            "EN": "We want to build it with you."
+        "reach-out": {
+            "FR": "Contactez nous",
+            "EN": "Reach out to us"
         }
     }
 
@@ -142,11 +146,12 @@ function Index() {
                         <p>
                             {INDEX_ELEMENTS_LOCALE["sic-presentation-3"][lang]}
                         </p>
-                        <Link to="/our-engagement">{INDEX_ELEMENTS_LOCALE["our-chart"][lang]}</Link>
+                        <Link className="our-charter" to="/our-engagement">{INDEX_ELEMENTS_LOCALE["our-chart"][lang]}</Link>
                         <p>
                             {INDEX_ELEMENTS_LOCALE["sic-presentation-4"][lang]} <br/>
                             {INDEX_ELEMENTS_LOCALE["sic-presentation-5"][lang]}
                         </p>
+                        <Link className="reach-out" to="/contact">{INDEX_ELEMENTS_LOCALE["reach-out"][lang]}</Link>
                     </div>
                 </div>
                 <div className="competition-actor">

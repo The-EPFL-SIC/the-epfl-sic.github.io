@@ -122,11 +122,12 @@
     max-width: 1200px;
 }
 
-.competition-presentation .text a {
+.competition-presentation .text .our-charter, .competition-presentation .text .reach-out {
     display: block;
     width: fit-content;
     margin-inline: auto;
     aspect-ratio: 1;
+    width: 7rem;
     display: flex;
     padding: 1rem;
     flex-direction: column;
@@ -138,6 +139,7 @@
     border-radius: 50%;
     &:hover {
         background-color: white;
+        transform: scale(0.9);
     }
 }
 

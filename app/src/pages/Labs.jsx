@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../styles/pages/Informations.css'
@@ -11,6 +11,11 @@ function Labs() {
     // the default language of the website is english
     let storedLang = localStorage.getItem('prefered-language') ?? "EN"; 
     let [lang, changeLang] = useState(storedLang);
+
+    useEffect(function() {
+        window.scrollTo(0, 0);
+        document.title = `${(lang === "FR")? "laboratoires" : "labs"} | EPFL Sustainable Innovation Challenge`;
+    }, [])
 
     function saveAndChangeLang(language) {
         switch(language) {

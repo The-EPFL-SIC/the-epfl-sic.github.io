@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import student_timeline_fr from '../assets/sic/informations/timeline_white_fr.svg'
@@ -13,6 +13,11 @@ function Competition() {
     // the default language of the website is english
     let storedLang = localStorage.getItem('prefered-language') ?? "EN"; 
     let [lang, changeLang] = useState(storedLang);
+
+    useEffect(function() {
+        window.scrollTo(0, 0);
+        document.title = `${(lang === "FR")? "la compétition" : "the competition"} | EPFL Sustainable Innovation Challenge`;
+    }, [])
 
     function saveAndChangeLang(language) {
         switch(language) {

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../styles/pages/Contact.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -7,6 +7,11 @@ function Contact() {
     // the default language of the website is english
     let storedLang = localStorage.getItem('prefered-language') ?? "EN"; 
     let [lang, changeLang] = useState(storedLang);
+
+    useEffect(function() {
+        window.scrollTo(0, 0);
+        document.title = `${(lang === "FR")? "nous contacter" : "contact us"} | EPFL Sustainable Innovation Challenge`;
+    }, [])
 
     function saveAndChangeLang(language) {
         switch(language) {
