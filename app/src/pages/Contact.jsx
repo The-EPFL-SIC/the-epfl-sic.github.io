@@ -55,7 +55,7 @@ function Contact() {
                             <h1>{CONTACT_ELEMENTS_LOCALE["title"][lang]}</h1>
                             <input type="email" name="email" placeholder="email *" required />
                             <input type="text" name="objet" placeholder={CONTACT_ELEMENTS_LOCALE["object"][lang]} />
-                            <textarea rows="7" placeholder={CONTACT_ELEMENTS_LOCALE["your-message"][lang]} required>
+                            <textarea name="message" rows="7" placeholder={CONTACT_ELEMENTS_LOCALE["your-message"][lang]} required>
                             </textarea>
                             <input type="submit" value="submit"/>
                         </form>
