@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cd119a3a.css",
-    "main.js": "/static/js/main.cd95ebfc.js",
+    "main.js": "/static/js/main.0feeb03c.js",
     "static/media/photo_mobile.jpg": "/static/media/photo_mobile.3aa8769e251110a8ea17.jpg",
     "static/media/photo_desktop.jpg": "/static/media/photo_desktop.015368f582d9f391debe.jpg",
     "static/media/photo_biodiversite.png": "/static/media/photo_biodiversite.953153cebb96eed51f6b.png",
@@ -39,10 +39,10 @@
     "static/media/competition_actors_2.svg": "/static/media/competition_actors_2.46cd26a53671dc6d87d0e4e57aa938b5.svg",
     "index.html": "/index.html",
     "main.cd119a3a.css.map": "/static/css/main.cd119a3a.css.map",
-    "main.cd95ebfc.js.map": "/static/js/main.cd95ebfc.js.map"
+    "main.0feeb03c.js.map": "/static/js/main.0feeb03c.js.map"
   },
   "entrypoints": [
     "static/css/main.cd119a3a.css",
-    "static/js/main.cd95ebfc.js"
+    "static/js/main.0feeb03c.js"
   ]
 }
