@@ -4,6 +4,8 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../styles/components/PdfViewer.css'
 import sic_status from '../assets/sic/files/status-epfl-sic.pdf'
+import sic_status_signed from '../assets/sic/files/status-epfl-sic-signed.pdf'
+import sic_ag_signed from '../assets/sic/files/ag-epfl-sic-signed.pdf'
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
@@ -36,7 +38,19 @@ function PvStatusAg() {
         localStorage.setItem("prefered-language", language);
         changeLang(language);
     }
-
+    const PV_AG_ELEMENTS_LOCALE = {
+        "description": {
+            "FR" : "Nous sommes une association à but non lucratif de l'EPFL. Vous pouvez trouver les documents signés de nos statuts ainsi que du compte rendu de notre dernière assemblée générale en cliquant sur les boutons ci-dessous.",         
+            "EN": "We are a nonprofit association at EPFL. You can find the signed documents for both our statutes and the minutes of our most recent general assembly by clicking the buttons below."
+        },
+        "ag-title": {
+            "FR": "PV AG",
+            "EN": "GA minutes"
+        },
+        "status-title": {
+            "FR": "Statuts",
+            "EN": "Statutes"
+        }};
     const [numPages, setNumPages] = useState(0);
     const [pageNumber, setPageNumber] = useState(1);
     const [scale, setScale] = useState(1);
@@ -68,12 +82,17 @@ function PvStatusAg() {
                 <section className="main">
                     <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                     <main>
-                        <h1> PV - status - AG (<a href={sic_status}>pdf</a>)</h1>
-                        <div className="pdf-container" ref={containerRef}>
-                            <Document file={sic_status} onLoadSuccess={onDocumentLoadSuccess}>
-                                {Array(numPages).fill(0).map((elem, i) => <Page key={`page-${i}`} scale={scale} renderTextLayer={false} renderAnnotationLayer={false} pageNumber={i+1}></Page>)}
-                            </Document>
-                        </div>
+                        <h1>
+                            {PV_AG_ELEMENTS_LOCALE["description"][lang]}
+                        </h1>
+                        <h1> (<a href={sic_ag_signed}>{PV_AG_ELEMENTS_LOCALE["ag-title"][lang]}</a>) - (<a href={sic_status_signed}>{PV_AG_ELEMENTS_LOCALE["status-title"][lang]}</a>)</h1>
+                        {/* 
+                         <div className="pdf-container" ref={containerRef}>
+                             <Document file={sic_status} onLoadSuccess={onDocumentLoadSuccess}>
+                                 {Array(numPages).fill(0).map((elem, i) => <Page key={`page-${i}`} scale={scale} renderTextLayer={false} renderAnnotationLayer={false} pageNumber={i+1}></Page>)}
+                             </Document>
+                         </div>
+                         */}
                     </main>
                 </section>
                 <Footer lang={lang} saveAndChangeLang={saveAndChangeLang} />
