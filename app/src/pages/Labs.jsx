@@ -246,8 +246,8 @@ function Labs() {
                         "EN": "Event Participation: "
                     },
                     "text": {
-                        "FR": "Rejoignez-nous les 13 et 14 mars sur le campus de l'EPFL à Lausanne, en Suisse - obtenez votre stand et présentez vos recherches, tout en réseautant avec des étudiants talentueux, des partenaires industriels, des chercheurs et des experts, et acquérez de nouvelles perspectives lors du forum scientifique.",
-                        "EN": "Join us on March 13-14th at EPFL Campus, Lausanne, Switzerland - get your stand and showcase your research, while networking with?/meeting? talented students, industry partners, researchers and experts, and gain new insights from the scientific forum."
+                        "FR": "Rejoignez-nous les 13 et 14 mars sur le campus de l'EPFL à Lausanne, en Suisse - obtenez votre stand et présentez vos recherches, tout en réseautant avec des étudiants talentueux, des partenaires industriels, des chercheurs et des experts, et acquérez de nouvelles perspectives lors d'une expo scientifique.",
+                        "EN": "Join us on March 13-14th at EPFL Campus, Lausanne, Switzerland - get your stand and showcase your research, while networking with?/meeting? talented students, industry partners, researchers and experts, and gain new insights from the scientific expo."
                     }   
                 }
             ]

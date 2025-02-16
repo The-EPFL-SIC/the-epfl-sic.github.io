@@ -142,8 +142,8 @@ function Members() {
         },
         {
             "category-name": {
-                "FR": "Equipe forum",
-                "EN": "Forum Team"
+                "FR": "Equipe expo",
+                "EN": "Expo Team"
             },
             "category-members": [
                 {

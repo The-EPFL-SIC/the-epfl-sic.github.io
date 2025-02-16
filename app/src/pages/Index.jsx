@@ -45,6 +45,10 @@ function Index() {
             "FR": "2024-2025 Sponsors et Partenaires!",
             "EN": "2024—2025 Sponsors and Partners!"
         },
+        "schedule & tickets": {
+            "FR": "Horaires et billets",
+            "EN": "Schedule & Tickets"
+        },
         "student-team": {
             "FR": "Etudiants",
             "EN": "Student Teams"
@@ -62,8 +66,8 @@ function Index() {
             "EN": "Companies & NGOs"
         },
         "sic-presentation-1": {
-            "FR": "Rejoignez-nous au RLC de Lausanne (EPFL) pour un événement de deux jours dédié à la durabilité, avec un forum réunissant entreprises et monde académique ainsi qu’un challenge étudiant.",
-            "EN": "Join us at the RLC in Lausanne (EPFL) for a two-day event dedicated to sustainability, featuring a company and academia forum alongside a student challenge."
+            "FR": "Rejoignez-nous au RLC de Lausanne (EPFL) pour un événement de deux jours dédié à la durabilité, avec une expo réunissant entreprises et monde académique ainsi qu’un challenge étudiant.",
+            "EN": "Join us at the RLC in Lausanne (EPFL) for a two-day event dedicated to sustainability, featuring a company and academia expo alongside a student challenge."
         },
         "sic-presentation-2": {
             "FR": "Notre focus : la réduction des émissions, la restauration de la biodiversité et des solutions alignées avec les ODD.",
@@ -129,7 +133,7 @@ function Index() {
                     <p>
                         {INDEX_ELEMENTS_LOCALE["sic-presentation"][lang]}<br/>
                         <strong>{INDEX_ELEMENTS_LOCALE["date"][lang]}</strong><br/>
-                        <strong>EPFL Rolex Learning Center</strong>
+                        <strong>EPFL Rolex Learning Center - <a href="https://www.eventbrite.com/e/epfl-sustainable-innovation-challenge-tickets-1248211717849?aff=oddtdtcreator">{INDEX_ELEMENTS_LOCALE["schedule & tickets"][lang]} </a> </strong>
                     </p>
                 </article>
             </section>
