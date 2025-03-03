@@ -42,7 +42,7 @@ function Blog() {
             <section className="main">
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                 <main>
-                    this is the blog gallery
+                    this is the blog gallery, coming soon
                 </main>
             </section>
             <Footer lang={lang} saveAndChangeLang={saveAndChangeLang} />

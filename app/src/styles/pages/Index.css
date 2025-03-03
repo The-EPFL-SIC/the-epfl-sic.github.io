@@ -30,6 +30,36 @@
     padding-left: 3rem;
 }
 
+.get-your-ticket {
+    display: block;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-left: auto;
+
+    color: white;
+    text-decoration: none;
+}
+
+.get-your-ticket img {
+    height: 50px;
+    transform: rotate(10deg); 
+    z-index: 1;
+}
+
+.first-page-logo {
+    height: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    margin-right: 2rem;
+}
+
 .welcome-page article h1 {
     font-size: 4rem;
     font-family: "Space Mono Bold", Arial;
@@ -224,6 +254,12 @@
     }
     .welcome-page article h1 {
         font-size: 3rem;
+    }
+    .first-page-logo {
+        height: 3rem;
+        padding-block: 0rem;
+        padding-top: 0;
+        padding-right: 0;
     }
     .welcome-page article p {
         font-size: 1rem;

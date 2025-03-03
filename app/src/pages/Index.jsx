@@ -4,6 +4,8 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../styles/global.css'
 import '../styles/pages/Index.css'
+import ticket_icon from '../assets/icons/ticket.png'
+import logo_white_sic from '../assets/sic/logo_2_blanc.svg'
 import logo_carbon_removal_booster from '../assets/logo/logo_carbon_removal_booster.png'
 import logo_epfl from '../assets/logo/logo_epfl.png'
 import logo_eth_sph from '../assets/logo/logo_eth_sph.svg'
@@ -45,9 +47,13 @@ function Index() {
             "FR": "2024-2025 Sponsors et Partenaires!",
             "EN": "2024—2025 Sponsors and Partners!"
         },
-        "schedule & tickets": {
-            "FR": "Horaires et billets",
-            "EN": "Schedule & Tickets"
+        "schedule": {
+            "FR": "Horaires",
+            "EN": "Schedule"
+        },
+        "tickets": {
+            "FR": "billets",
+            "EN": "tickets"
         },
         "student-team": {
             "FR": "Etudiants",
@@ -123,17 +129,26 @@ function Index() {
             <section className="welcome-page">
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                 <article>
+                    <a className="get-your-ticket" href="https://www.eventbrite.com/e/epfl-sustainable-innovation-challenge-tickets-1248211717849?aff=oddtdtcreator">
+                        <img src={ticket_icon} alt="ticket"/>
+                        <div>
+                            {INDEX_ELEMENTS_LOCALE["schedule"][lang]}<br/>
+                            <span className="special-char"> & </span>
+                            {INDEX_ELEMENTS_LOCALE["tickets"][lang]}
+                        </div>
+                    </a>
                     <h1>
                         EPFL<span className="special-char">'</span>s <br/>
                         Sustainable <br/>
                         Innovation <br/>
                         Challenge <br/>
-                        (SIC)
+                        <img className="first-page-logo" src={logo_epfl} alt="epfl logo" />
+                        <img className="first-page-logo" src={logo_white_sic} alt="logo sic" />
                     </h1>
                     <p>
                         {INDEX_ELEMENTS_LOCALE["sic-presentation"][lang]}<br/>
                         <strong>{INDEX_ELEMENTS_LOCALE["date"][lang]}</strong><br/>
-                        <strong>EPFL Rolex Learning Center - <a href="https://www.eventbrite.com/e/epfl-sustainable-innovation-challenge-tickets-1248211717849?aff=oddtdtcreator">{INDEX_ELEMENTS_LOCALE["schedule & tickets"][lang]} </a> </strong>
+                        <strong>EPFL Rolex Learning Center</strong>
                     </p>
                 </article>
             </section>

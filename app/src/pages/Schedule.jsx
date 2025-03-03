@@ -50,7 +50,7 @@ function Schedule() {
             <section className="main">
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                 <main>
-                    this is the schedule
+                    this is the schedule, coming soon
                     <SwitchButton />
                 </main>
             </section>

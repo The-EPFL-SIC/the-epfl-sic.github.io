@@ -20,6 +20,7 @@
     height: 0;
     overflow: hidden;
     transition: 0ms height, 0ms padding;
+    z-index: 2;
 } 
 
 .nav-elem-dropdown ul {

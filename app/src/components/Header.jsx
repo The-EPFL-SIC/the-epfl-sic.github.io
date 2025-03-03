@@ -13,6 +13,8 @@ function Header({saveAndChangeLang, lang}) {
                     "EN": "Events"
                 },
                 elements: [
+                    // to uncomment after the event
+                    /*
                     {
                         display: {
                             "FR": "Compétition",
@@ -33,6 +35,28 @@ function Header({saveAndChangeLang, lang}) {
                             "EN": "Labs"
                         }, 
                         to: "/labs"
+                    }
+                    */
+                    {
+                        display: {
+                            "FR": "Horaires",
+                            "EN": "Schedule"
+                        }, 
+                        to: "/event-schedule"
+                    },
+                    {
+                        display: {
+                            "FR": "Edition 2025",
+                            "EN": "2025 Edition"
+                        }, 
+                        to: "/current-event-edition-information"
+                    },
+                    {
+                        display: {
+                            "FR": "Le blog",
+                            "EN": "The blog"
+                        }, 
+                        to: "/blog"
                     }
                 ]
             },  

@@ -42,7 +42,7 @@ function CurrentEditionInformation() {
             <section className="main">
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                 <main>
-                    those are the information for the current edition
+                    those are the information for the current edition, coming soon
                 </main>
             </section>
             <Footer lang={lang} saveAndChangeLang={saveAndChangeLang} />
