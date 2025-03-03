@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cd119a3a.css",
-    "main.js": "/static/js/main.870d5cc4.js",
+    "main.css": "/static/css/main.f4db9c9a.css",
+    "main.js": "/static/js/main.cfc0a935.js",
     "static/media/photo_mobile.jpg": "/static/media/photo_mobile.3aa8769e251110a8ea17.jpg",
     "static/media/photo_desktop.jpg": "/static/media/photo_desktop.015368f582d9f391debe.jpg",
     "static/media/photo_biodiversite.png": "/static/media/photo_biodiversite.953153cebb96eed51f6b.png",
@@ -9,11 +9,11 @@
     "static/media/leo.png": "/static/media/leo.32b3b7d405da51df695e.png",
     "static/media/victor.png": "/static/media/victor.fc3e82c7ce873d1e25dd.png",
     "static/media/status-epfl-sic-signed.pdf": "/static/media/status-epfl-sic-signed.45536677b6cae8523ddd.pdf",
-    "static/media/timeline_white_fr.svg": "/static/media/timeline_white_fr.a88da4e7e47536f296129b4899b02e47.svg",
+    "static/media/timeline_white_fr.svg": "/static/media/timeline_white_fr.e6f0d605b56289d28677be7be3cd5978.svg",
     "static/media/selin.png": "/static/media/selin.4b59e760e20f7323fd4d.png",
     "static/media/ecenaz.png": "/static/media/ecenaz.436f5ec00be2a6890241.png",
     "static/media/laurene.png": "/static/media/laurene.c3a1ebd55fab7c9e5d3f.png",
-    "static/media/timeline_white_en.svg": "/static/media/timeline_white_en.76edc4f5d819f55b97bd14c7e81f4b26.svg",
+    "static/media/timeline_white_en.svg": "/static/media/timeline_white_en.b6c2c3d3e68f0faac3d086f9c1250415.svg",
     "static/media/isaure.png": "/static/media/isaure.18e2e581dfd082809189.png",
     "static/media/basile.png": "/static/media/basile.728547be9c40c6c3d3fe.png",
     "static/media/cyril.png": "/static/media/cyril.23ca97a057a4a7356275.png",
@@ -34,17 +34,18 @@
     "static/media/awards.png": "/static/media/awards.b42ca64e0e7e706574ba.png",
     "static/media/logo_carbon_removal_booster.png": "/static/media/logo_carbon_removal_booster.8f305e73f8db4e163a12.png",
     "static/media/networks.png": "/static/media/networks.b50b724e26f08fad706b.png",
-    "static/media/logo.svg": "/static/media/logo.8eeb9ac1fb2e4e90cfec4b698563d6d3.svg",
+    "static/media/logo.svg": "/static/media/logo.ec88aa909cf3becbc0bebdf1b28d8c26.svg",
+    "static/media/logo_2_blanc.svg": "/static/media/logo_2_blanc.323197d10b10fcfb7abaf3570d89d1ea.svg",
     "static/media/logo_epfl_cctc.png": "/static/media/logo_epfl_cctc.6cda7f33da7d9c8c10f5.png",
     "static/media/logo_epfl.png": "/static/media/logo_epfl.f5dd7731a201a7d2c0f7.png",
-    "static/media/logo_eth_sph.svg": "/static/media/logo_eth_sph.cbff4c4818ff2f0cfcc4c6b2aedc86de.svg",
-    "static/media/competition_actors_2.svg": "/static/media/competition_actors_2.9fffdeb4e87aff02df95ac26967e27a5.svg",
+    "static/media/logo_eth_sph.svg": "/static/media/logo_eth_sph.3729c82eb63c6a32eee336beefeeb577.svg",
+    "static/media/competition_actors_2.svg": "/static/media/competition_actors_2.46cd26a53671dc6d87d0e4e57aa938b5.svg",
     "index.html": "/index.html",
-    "main.cd119a3a.css.map": "/static/css/main.cd119a3a.css.map",
-    "main.870d5cc4.js.map": "/static/js/main.870d5cc4.js.map"
+    "main.f4db9c9a.css.map": "/static/css/main.f4db9c9a.css.map",
+    "main.cfc0a935.js.map": "/static/js/main.cfc0a935.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd119a3a.css",
-    "static/js/main.870d5cc4.js"
+    "static/css/main.f4db9c9a.css",
+    "static/js/main.cfc0a935.js"
   ]
 }
