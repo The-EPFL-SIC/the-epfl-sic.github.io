@@ -42,7 +42,14 @@ function Schedule() {
         "one-text": {
             "FR": "french version of the text",
             "EN": "english version of the text"
-        }
+        },
+        "first-day": "13/03",
+        "second-day": "14/03"
+    }
+
+    let [whichDayScheduleToVisualize, setWhichDayScheduleToVisualize] = useState(0)
+    function handleOptionSwitchCallBack(optionIndex) {
+        setWhichDayScheduleToVisualize(optionIndex)
     }
 
     return (
@@ -50,8 +57,11 @@ function Schedule() {
             <section className="main">
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                 <main>
-                    this is the schedule, coming soon
-                    <SwitchButton />
+                    <SwitchButton 
+                        option1={SCHEDULE_ELEMENTS_LOCALE["first-day"]}
+                        option2={SCHEDULE_ELEMENTS_LOCALE["second-day"]}
+                        selectedOption={whichDayScheduleToVisualize}
+                        handleOptionSwitchCallBack={handleOptionSwitchCallBack} />
                 </main>
             </section>
             <Footer lang={lang} saveAndChangeLang={saveAndChangeLang} />

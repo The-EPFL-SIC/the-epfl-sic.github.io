@@ -1,0 +1,44 @@
+.switch-button {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    width: fit-content;
+    margin-inline: auto;
+
+    border: 3px solid white;
+    border-radius: 30px;
+}
+
+.switch-button p {
+    font-size: 1rem;
+    padding: 5px 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 250ms color;
+}
+.switch-button[selectedOption="0"] p:nth-child(1), .switch-button[selectedOption="1"] p:nth-child(2){
+    color: black;
+}
+.switch-button[selectedOption="0"] p:nth-child(2), .switch-button[selectedOption="1"] p:nth-child(1){
+    color: white;
+}
+
+.switch-button div {
+    position: absolute;
+    top: -1px;
+    border-radius: 25px;
+    border: 1px solid white;
+    background-color: white;
+    z-index: 0;
+    width: calc(50%);
+    height: 100%;
+    transition: 250ms left;
+}
+.switch-button[selectedOption="0"] div {
+    left: -1px;
+}
+.switch-button[selectedOption="1"] div {
+    left: 50%;
+}
