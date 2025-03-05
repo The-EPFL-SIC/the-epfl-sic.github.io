@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f4db9c9a.css",
-    "main.js": "/static/js/main.cfc0a935.js",
+    "main.css": "/static/css/main.80922ac8.css",
+    "main.js": "/static/js/main.d35467ad.js",
     "static/media/photo_mobile.jpg": "/static/media/photo_mobile.3aa8769e251110a8ea17.jpg",
     "static/media/photo_desktop.jpg": "/static/media/photo_desktop.015368f582d9f391debe.jpg",
     "static/media/photo_biodiversite.png": "/static/media/photo_biodiversite.953153cebb96eed51f6b.png",
@@ -41,11 +41,11 @@
     "static/media/logo_eth_sph.svg": "/static/media/logo_eth_sph.3729c82eb63c6a32eee336beefeeb577.svg",
     "static/media/competition_actors_2.svg": "/static/media/competition_actors_2.46cd26a53671dc6d87d0e4e57aa938b5.svg",
     "index.html": "/index.html",
-    "main.f4db9c9a.css.map": "/static/css/main.f4db9c9a.css.map",
-    "main.cfc0a935.js.map": "/static/js/main.cfc0a935.js.map"
+    "main.80922ac8.css.map": "/static/css/main.80922ac8.css.map",
+    "main.d35467ad.js.map": "/static/js/main.d35467ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4db9c9a.css",
-    "static/js/main.cfc0a935.js"
+    "static/css/main.80922ac8.css",
+    "static/js/main.d35467ad.js"
   ]
 }
