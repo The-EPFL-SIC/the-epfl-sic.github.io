@@ -10,7 +10,7 @@ function CurrentEditionInformation() {
 
     useEffect(function() {
         window.scrollTo(0, 0);
-        document.title = `${(lang === "FR")? "EMPTY_PAGE_TITLE_FR" : "EMPTY_PAGE_TITLE_EN"} | EPFL Sustainable Innovation Challenge`;
+        document.title = `${(lang === "FR")? "l'edition 2025" : "the 2025 edition"} | EPFL Sustainable Innovation Challenge`;
     }, []) 
 
     function saveAndChangeLang(language) {

@@ -1,0 +1,202 @@
+{
+    "days": [
+        {
+            "date": "13/04",
+            "locations": [
+                {
+                    "name": "Rolex Forum",
+                    "events": [
+                        {
+                            "start": "8h00",
+                            "end": "8h45",
+                            "event": "Registration",
+                            "type": "marked-as-diverse"
+                        },
+                        {
+                            "start": "8h45",
+                            "end": "9h00",
+                            "event": "Opening statement with Edouard Bugnion",
+                            "type": "marked-as-diverse"
+                        },
+                        {
+                            "start": "9h00",
+                            "end": "9h45",
+                            "event": "Kai Gehring",
+                            "type": "marked-as-speakers"
+                        },  
+                        {
+                            "start": "10h00",
+                            "end": "10h45",
+                            "event": "Alexander Mathys",
+                            "type": "marked-as-speakers"
+                        },  
+                        {
+                            "start": "10h45",
+                            "end": "11h15",
+                            "event": "Coffee Break",
+                            "type": "marked-as-diverse"
+                        },
+                        {
+                            "start": "11h15",
+                            "end": "12h00",
+                            "event": "Christophe Ballif",
+                            "type": "marked-as-speakers"
+                        },
+                        {
+                            "start": "12h15",
+                            "end": "13h00",
+                            "event": "Cédric Tard",
+                            "type": "marked-as-speakers"
+                        },                      
+                        {
+                            "start": "13h00",
+                            "end": "14h00",
+                            "event": "Lunch",
+                            "type": "marked-as-diverse"
+                        },
+                        {
+                            "start": "14h00",
+                            "end": "14h45",
+                            "event": "Grégory Nocton",
+                            "type": "marked-as-speakers"
+                        },
+                        {
+                            "start": "15h00",
+                            "end": "15h45",
+                            "event": "Claudia Binder",
+                            "type": "marked-as-speakers"
+                        },
+                        {
+                            "start": "16h00",
+                            "end": "16h45",
+                            "event": "Sascha Nick",
+                            "type": "marked-as-speakers"
+                        },
+                        {
+                            "start": "16h45",
+                            "end": "17h15",
+                            "event": "Coffee Break",
+                            "type": "marked-as-diverse"
+                        },
+                        {
+                            "start": "17h15",
+                            "end": "18h00",
+                            "event": "Massimo Tavoni",
+                            "type": "marked-as-speakers"
+                        },
+                        {
+                            "start": "18h00",
+                            "end": "20h00",
+                            "event": "Challenge",
+                            "type": "marked-as-special-format-event"
+                        },
+                        {
+                            "start": "20h00",
+                            "end": "onwards",
+                            "event": "Apero",
+                            "type": "marked-as-diverse"
+                        }
+                    ]
+                },
+                {
+                    "name": "MED and Rolex Hall",
+                    "events": [
+                        {
+                            "start": "9h00",
+                            "end": "onwards",
+                            "event": "industry, academia and student exhibition + showcase",
+                            "type": "marked-as-showcase"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "date": "14/04",
+            "locations": [
+                {
+                    "name": "Rolex Forum",
+                    "events": [
+                        {
+                            "start": "9h00",
+                            "end": "9h45",
+                            "event": "Monika Roeling",
+                            "type": "marked-as-speakers"
+                        },
+                        {
+                            "start": "10h00",
+                            "end": "10h45",
+                            "event": "Satu Huuhka",
+                            "type": "marked-as-speakers"
+                        },
+                        {
+                            "start": "12h00",
+                            "end": "12h45",
+                            "event": "Giacomo D'Alisa",
+                            "type": "marked-as-speakers"
+                        },
+                        {
+                            "start": "12h45",
+                            "end": "13h30",
+                            "event": "Lunch",
+                            "type": "marked-as-diverse"
+                        },
+                        {
+                            "start": "15h30",
+                            "end": "16h15",
+                            "event": "Julia Steinberger",
+                            "type": "marked-as-speakers"
+                        },
+                        {
+                            "start": "16h30",
+                            "end": "18h30",
+                            "event": "Academic Citizen's Assembly + Coffee",
+                            "type": "marked-as-special-format-event"
+                        },
+                        {
+                            "start": "18h30",
+                            "end": "19h00",
+                            "event": "Prizes and closing statement",
+                            "type": "marked-as-diverse"
+                        }
+                    ]
+                },
+                {
+                    "name": "Rolex Hodler",
+                    "events": [
+                        {
+                            "start": "10h45",
+                            "end": "11h15",
+                            "event": "Coffee Break",
+                            "type": "marked-as-diverse"
+                        },
+                        {
+                            "start": "11h15",
+                            "end": "11h45",
+                            "event": "Workshop: careers in sustainability, e4s",
+                            "type": "marked-as-workshops"
+                        },
+                        {
+                            "start": "13h30",
+                            "end": "14h15",
+                            "event": "Workshop: sustainability and industrial development, Deloitte",
+                            "type": "marked-as-workshops"
+                        },
+                        {
+                            "start": "14h30",
+                            "end": "15h15",
+                            "event": "Workshop: ZEG (internal people)",
+                            "type": "marked-as-workshops"
+                        },
+                        {
+                            "start": "16h30",
+                            "end": "18h30",
+                            "event": "Workshop: ZEG (external people)",
+                            "type": "marked-as-workshops"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

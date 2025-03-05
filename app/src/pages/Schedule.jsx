@@ -1,14 +1,10 @@
-/* 
-    This is the minimal base template
-    for a new page on the website 
-
-    To start with a new page duplicate this file and rename it with the new page name
-*/
 import { useState, useEffect } from 'react'
-import '../styles/pages/Contact.css'
+import '../styles/pages/Schedule.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import SwitchButton from '../components/SwitchButton'
+import ScheduleTable from '../components/ScheduleTable'
+import schedule_data from '../data/schedule_data.json'
 
 function Schedule() {
     // the default language of the website is english
@@ -17,7 +13,7 @@ function Schedule() {
 
     useEffect(function() {
         window.scrollTo(0, 0);
-        document.title = `${(lang === "FR")? "EMPTY_PAGE_TITLE_FR" : "EMPTY_PAGE_TITLE_EN"} | EPFL Sustainable Innovation Challenge`;
+        document.title = `${(lang === "FR")? "horaires & billets" : "schedule & tickets"} | EPFL Sustainable Innovation Challenge`;
     }, [])
 
     function saveAndChangeLang(language) {
@@ -47,7 +43,7 @@ function Schedule() {
         "second-day": "14/03"
     }
 
-    let [whichDayScheduleToVisualize, setWhichDayScheduleToVisualize] = useState(0)
+    let [whichDayToVisualize, setWhichDayScheduleToVisualize] = useState(0)
     function handleOptionSwitchCallBack(optionIndex) {
         setWhichDayScheduleToVisualize(optionIndex)
     }
@@ -60,13 +56,33 @@ function Schedule() {
                     <SwitchButton 
                         option1={SCHEDULE_ELEMENTS_LOCALE["first-day"]}
                         option2={SCHEDULE_ELEMENTS_LOCALE["second-day"]}
-                        selectedOption={whichDayScheduleToVisualize}
+                        selectedOption={whichDayToVisualize}
                         handleOptionSwitchCallBack={handleOptionSwitchCallBack} />
+                    <ScheduleTable 
+                        scheduleData={schedule_data["days"][whichDayToVisualize]} />
+                    <div className="schedule-legend">
+                        <div>
+                            <div className="marked-as-speakers"></div>
+                            <p>Speakers</p>
+                        </div>
+                        <div>
+                            <div className="marked-as-showcase"></div>
+                            <p>Showcase</p>
+                        </div>
+                        <div>
+                            <div className="marked-as-special-format-event"></div>
+                            <p>Special format event</p>
+                        </div>
+                        <div>
+                            <div className="marked-as-workshops"></div>
+                            <p>Workshops</p>
+                        </div>
+                    </div>
                 </main>
             </section>
             <Footer lang={lang} saveAndChangeLang={saveAndChangeLang} />
         </div>
     )
 }
-
+ 
 export default Schedule

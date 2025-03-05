@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import '../styles/pages/Contact.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -10,7 +9,7 @@ function Blog() {
 
     useEffect(function() {
         window.scrollTo(0, 0);
-        document.title = `${(lang === "FR")? "EMPTY_PAGE_TITLE_FR" : "EMPTY_PAGE_TITLE_EN"} | EPFL Sustainable Innovation Challenge`;
+        document.title = `${(lang === "FR")? "le blog" : "the blog"} | EPFL Sustainable Innovation Challenge`;
     }, []) 
 
     function saveAndChangeLang(language) {

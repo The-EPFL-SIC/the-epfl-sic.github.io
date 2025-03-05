@@ -1,9 +1,3 @@
-/* 
-    This is the minimal base template
-    for a new page on the website 
-
-    To start with a new page duplicate this file and rename it with the new page name
-*/
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import '../styles/pages/Contact.css'
@@ -17,7 +11,7 @@ function Jury() {
 
     useEffect(function() {
         window.scrollTo(0, 0);
-        document.title = `${(lang === "FR")? "EMPTY_PAGE_TITLE_FR" : "EMPTY_PAGE_TITLE_EN"} | EPFL Sustainable Innovation Challenge`;
+        document.title = `${(lang === "FR")? "membre du jury" : "jury member"} | EPFL Sustainable Innovation Challenge`;
     }, [])
 
     function saveAndChangeLang(language) {
