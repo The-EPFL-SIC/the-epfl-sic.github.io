@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.80922ac8.css",
-    "main.js": "/static/js/main.d35467ad.js",
+    "main.css": "/static/css/main.a081de92.css",
+    "main.js": "/static/js/main.b30a9dce.js",
+    "static/media/event_poster_en.png": "/static/media/event_poster_en.108305a7adf8f62ef2a2.png",
     "static/media/photo_mobile.jpg": "/static/media/photo_mobile.3aa8769e251110a8ea17.jpg",
     "static/media/photo_desktop.jpg": "/static/media/photo_desktop.015368f582d9f391debe.jpg",
     "static/media/photo_biodiversite.png": "/static/media/photo_biodiversite.953153cebb96eed51f6b.png",
+    "static/media/event_poster_fr.png": "/static/media/event_poster_fr.317dcd505cdcbe1080ba.png",
     "static/media/pdf.worker.min.mjs": "/static/media/pdf.worker.min.8bec976a1a536e55abd8.mjs",
     "static/media/leo.png": "/static/media/leo.32b3b7d405da51df695e.png",
     "static/media/victor.png": "/static/media/victor.fc3e82c7ce873d1e25dd.png",
@@ -24,12 +26,21 @@
     "static/media/charte-epfl-sic.pdf": "/static/media/charte-epfl-sic.27472a6654585be60e42.pdf",
     "static/media/person_linkedin.png": "/static/media/person_linkedin.cf6e0f1e7f20f65cee47.png",
     "static/media/hadrien.png": "/static/media/hadrien.420985ae27a665837ed4.png",
+    "static/media/logo_ingenieur_du_monde.png": "/static/media/logo_ingenieur_du_monde.b5edfb2c8e00ce4ce8e0.png",
+    "static/media/logo_castor_freegan.png": "/static/media/logo_castor_freegan.b14fc9c3a5b76194913e.png",
     "static/media/SpaceMono-Regular.ttf": "/static/media/SpaceMono-Regular.8a2aa304d0bd5e41d186.ttf",
     "static/media/SpaceMono-Bold.ttf": "/static/media/SpaceMono-Bold.056ac3ebe5f65cb5c4ac.ttf",
+    "static/media/logo_climate_robotics.png": "/static/media/logo_climate_robotics.83890b4d6ff1d06b8274.png",
+    "static/media/logo_artepoly.png": "/static/media/logo_artepoly.1ce9c1996b0da6512d40.png",
+    "static/media/logo_zero_emission_group.png": "/static/media/logo_zero_emission_group.e76197b576bc324e2d78.png",
     "static/media/default_user.png": "/static/media/default_user.01ea793213b0728e3892.png",
+    "static/media/logo_e4s.png": "/static/media/logo_e4s.9bf6ae4abf56fed714f4.png",
+    "static/media/logo_chocopoly.png": "/static/media/logo_chocopoly.8645f01673133f8d28e3.png",
     "static/media/goal.png": "/static/media/goal.88c9d6e0fd470ef682e3.png",
+    "static/media/logo_cleantech_alps.png": "/static/media/logo_cleantech_alps.c73144d4cf5adf652ba3.png",
     "static/media/exhibition.png": "/static/media/exhibition.c31c893fe8b0917f1527.png",
     "static/media/offer.png": "/static/media/offer.3c72a99aaeac8859568d.png",
+    "static/media/logo_fustic.png": "/static/media/logo_fustic.427c8a7702fb4948fc8b.png",
     "static/media/commitment.png": "/static/media/commitment.b61676b21a5525c5f387.png",
     "static/media/awards.png": "/static/media/awards.b42ca64e0e7e706574ba.png",
     "static/media/logo_carbon_removal_booster.png": "/static/media/logo_carbon_removal_booster.8f305e73f8db4e163a12.png",
@@ -41,11 +52,11 @@
     "static/media/logo_eth_sph.svg": "/static/media/logo_eth_sph.3729c82eb63c6a32eee336beefeeb577.svg",
     "static/media/competition_actors_2.svg": "/static/media/competition_actors_2.46cd26a53671dc6d87d0e4e57aa938b5.svg",
     "index.html": "/index.html",
-    "main.80922ac8.css.map": "/static/css/main.80922ac8.css.map",
-    "main.d35467ad.js.map": "/static/js/main.d35467ad.js.map"
+    "main.a081de92.css.map": "/static/css/main.a081de92.css.map",
+    "main.b30a9dce.js.map": "/static/js/main.b30a9dce.js.map"
   },
   "entrypoints": [
-    "static/css/main.80922ac8.css",
-    "static/js/main.d35467ad.js"
+    "static/css/main.a081de92.css",
+    "static/js/main.b30a9dce.js"
   ]
 }
