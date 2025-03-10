@@ -10,7 +10,20 @@ import logo_carbon_removal_booster from '../assets/logo/logo_carbon_removal_boos
 import logo_epfl from '../assets/logo/logo_epfl.png'
 import logo_eth_sph from '../assets/logo/logo_eth_sph.svg'
 import logo_epfl_cctc from '../assets/logo/logo_epfl_cctc.png'
+
+import logo_castor_freegan from '../assets/logo/logo_castor_freegan.png'
+import logo_chocopoly from '../assets/logo/logo_chocopoly.png'
+import logo_fustic from '../assets/logo/logo_fustic.png'
+import logo_climate_robotics from '../assets/logo/logo_climate_robotics.png'
+import logo_artepoly from '../assets/logo/logo_artepoly.png'
+import logo_e4s from '../assets/logo/logo_e4s.png'
+import logo_cleantech_alps from '../assets/logo/logo_cleantech_alps.png'
+import logo_ingenieur_du_monde from '../assets/logo/logo_ingenieur_du_monde.png'
+import logo_zero_emission_group from '../assets/logo/logo_zero_emission_group.png'
+
 import competition_actors from '../assets/sic/informations/competition_actors_2.svg'
+import event_poster_en from '../assets/sic/informations/event_poster_en.png'
+import event_poster_fr from '../assets/sic/informations/event_poster_fr.png'
 
 function Index() {
     // the default language of the website is english
@@ -47,10 +60,6 @@ function Index() {
         "date": {
             "FR": "Mars 13, 14 2025",
             "EN": "March 13, 14 2025"
-        },
-        "sponsors-n-partners": {
-            "FR": "2024-2025 Sponsors et Partenaires!",
-            "EN": "2024—2025 Sponsors and Partners!"
         },
         "schedule": {
             "FR": "Horaires",
@@ -103,10 +112,41 @@ function Index() {
         "reach-out": {
             "FR": "Contactez nous",
             "EN": "Reach out to us"
+        },
+        "event-poster": {
+            "FR": "poster de l'évènement",
+            "EN": "the event poster"
+        },
+        "our-chart-link": {
+            "FR": "Notre charte",
+            "EN": "Our charter",
+            to: "/our-engagement"
+        },
+        "event-schedule-link": {
+            "FR": "Planning",
+            "EN": "Schedule",
+            to: "/event-schedule"
+        },
+        "current-edition-link": {
+            "FR": "Édition 2024-2025",
+            "EN": "2024-2025 edition",
+            to: "/current-event-edition-information"
+        },
+        "principal-partners": {
+            "FR": "Partenaires principaux",
+            "EN": "Principal partners"
+        },
+        "partner-association": {
+            "FR": "Associations partenaires",
+            "EN": "Partner associations"
+        },
+        "partner-association-and-commission": {
+            "FR": "Associations et commissions partenaires",
+            "EN": "Partner associations & commissions"
         }
     }
 
-    const sponsors = [
+    const principal_partners = [
         {
             "name": "Carbon removal booster",
             "link": "https://www.cdr-booster.ch/",
@@ -127,6 +167,57 @@ function Index() {
             "link": "https://sph.ethz.ch/",
             "logo": logo_eth_sph
         }
+    ]
+
+    const partner_associations = [
+        {
+            "name": "cleantech alps",
+            "link": "",
+            "logo": logo_cleantech_alps
+        },
+        {
+            "name": "e4s",
+            "link": "",
+            "logo": logo_e4s
+        },
+        {
+            "name": "fustic",
+            "link": "",
+            "logo": logo_fustic
+        },
+        {
+            "name": "climate robotics",
+            "link": "",
+            "logo": logo_climate_robotics
+        },
+    ]
+
+    const partner_associations_and_commissions = [
+        {
+            "name": "zero emission group",
+            "link": "",
+            "logo": logo_zero_emission_group
+        },
+        {
+            "name": "ingénieur du monde",
+            "link": "",
+            "logo": logo_ingenieur_du_monde
+        },
+        {
+            "name": "artepoly",
+            "link": "",
+            "logo": logo_artepoly
+        },
+        {
+            "name": "chocopoloy",
+            "link": "",
+            "logo": logo_chocopoly
+        },
+        {
+            "name": "le castor freegan",
+            "link": "",
+            "logo": logo_castor_freegan
+        },
     ]
 
     return (
@@ -158,41 +249,79 @@ function Index() {
                 </article>
             </section>
             <section className="sic-presentation">
-                <div className="competition-presentation">
-                    <div className="image"></div>
-                    <div className="text">
-                        <h2>
-                            {INDEX_ELEMENTS_LOCALE["sic-presentation-1"][lang]}
-                        </h2>
-                        <p>
-                            {INDEX_ELEMENTS_LOCALE["sic-presentation-2"][lang]}
-                        </p>
-                        <p>
-                            {INDEX_ELEMENTS_LOCALE["sic-presentation-3"][lang]}
-                        </p>
-                        <Link className="our-charter" to="/our-engagement">{INDEX_ELEMENTS_LOCALE["our-chart"][lang]}</Link>
-                        <p>
-                            {INDEX_ELEMENTS_LOCALE["sic-presentation-4"][lang]} <br/>
-                            {INDEX_ELEMENTS_LOCALE["sic-presentation-5"][lang]}
-                        </p>
-                        <Link className="reach-out" to="/contact">{INDEX_ELEMENTS_LOCALE["reach-out"][lang]}</Link>
+                {
+                    // to keep visible between the events
+                    /*
+                    <>
+                        <div className="competition-presentation">
+                            <div className="image"></div>
+                            <div className="text">
+                                <h2>
+                                    {INDEX_ELEMENTS_LOCALE["sic-presentation-1"][lang]}
+                                </h2>
+                                <p>
+                                    {INDEX_ELEMENTS_LOCALE["sic-presentation-2"][lang]}
+                                </p>
+                                <p>
+                                    {INDEX_ELEMENTS_LOCALE["sic-presentation-3"][lang]}
+                                </p>
+                                <Link className="our-charter" to="/our-engagement">{INDEX_ELEMENTS_LOCALE["our-chart"][lang]}</Link>
+                                <p>
+                                    {INDEX_ELEMENTS_LOCALE["sic-presentation-4"][lang]} <br/>
+                                    {INDEX_ELEMENTS_LOCALE["sic-presentation-5"][lang]}
+                                </p>
+                                <Link className="reach-out" to="/contact">{INDEX_ELEMENTS_LOCALE["reach-out"][lang]}</Link>
+                            </div>
+                        </div>
+                        <div className="competition-actor">
+                            <img src={competition_actors} alt="competition actors"/>
+                            <Link className="link-to-student" to="/competition">{INDEX_ELEMENTS_LOCALE["student-team"][lang]}</Link>
+                            <Link className="link-to-lab" to="/labs">{INDEX_ELEMENTS_LOCALE["labs"][lang]}</Link>
+                            <Link className="link-to-companies" to="/companies">{INDEX_ELEMENTS_LOCALE["compagnies"][lang]}</Link>
+                            <p className="link-to-public">Public</p>
+                        </div>
+                    </>
+                    */
+                }
+                {
+                    // to keep visible during the event
+                    <div className="poster">
+                        <img src={(lang === "EN")? event_poster_en : event_poster_fr} alt={INDEX_ELEMENTS_LOCALE["event-poster"][lang]} />
+                        <Link className="our-chart-link" to={INDEX_ELEMENTS_LOCALE["our-chart-link"]["to"]}>
+                            {INDEX_ELEMENTS_LOCALE["our-chart-link"][lang]}
+                        </Link>
+                        <Link className="event-schedule-link" to={INDEX_ELEMENTS_LOCALE["event-schedule-link"]["to"]}>
+                            {INDEX_ELEMENTS_LOCALE["event-schedule-link"][lang]}
+                        </Link>
+                        <Link className="current-edition-link" to={INDEX_ELEMENTS_LOCALE["current-edition-link"]["to"]}>
+                            {INDEX_ELEMENTS_LOCALE["current-edition-link"][lang]}
+                        </Link>
                     </div>
-                </div>
-                <div className="competition-actor">
-                    <img src={competition_actors} alt="competition actors"/>
-                    <Link className="link-to-student" to="/competition">{INDEX_ELEMENTS_LOCALE["student-team"][lang]}</Link>
-                    <Link className="link-to-lab" to="/labs">{INDEX_ELEMENTS_LOCALE["labs"][lang]}</Link>
-                    <Link className="link-to-companies" to="/companies">{INDEX_ELEMENTS_LOCALE["compagnies"][lang]}</Link>
-                    <p className="link-to-public">Public</p>
-                </div>
+                }
             </section>
             <section className="partners">
                 <hr/>
-                <h2> {INDEX_ELEMENTS_LOCALE["sponsors-n-partners"][lang]} </h2> 
+                <h2> {INDEX_ELEMENTS_LOCALE["principal-partners"][lang]} </h2> 
                 <div className="gallery">
-                    {sponsors.map(sponsor => (
-                        <a key={"sponsor" + sponsor["name"]} href={sponsor["link"]}>
-                            <img src={sponsor["logo"]} alt={sponsor["name"]} />
+                    {principal_partners.map(partner => (
+                        <a key={"principal partner" + partner["name"]} href={partner["link"]}>
+                            <img src={partner["logo"]} alt={partner["name"]} />
+                        </a>
+                    ))}
+                </div>
+                <h2> {INDEX_ELEMENTS_LOCALE["partner-association"][lang]} </h2> 
+                <div className="gallery">
+                    {partner_associations.map(partner => (
+                        <a key={"partner" + partner["name"]} href={partner["link"]}>
+                            <img src={partner["logo"]} alt={partner["name"]} />
+                        </a>
+                    ))}
+                </div>
+                <h2> {INDEX_ELEMENTS_LOCALE["partner-association-and-commission"][lang]} </h2> 
+                <div className="gallery">
+                    {partner_associations_and_commissions.map(partner => (
+                        <a key={"sponsor" + partner["name"]} href={partner["link"]}>
+                            <img src={partner["logo"]} alt={partner["name"]} />
                         </a>
                     ))}
                 </div>

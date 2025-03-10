@@ -287,3 +287,47 @@
         max-width: 300px;
     }
 }
+
+.poster {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    margin-inline: auto;
+    height: fit-content;
+}
+.poster img {
+    display: block;
+    width: 100%;
+}
+
+.current-edition-link, .event-schedule-link, .our-chart-link {
+    position: absolute;
+    top: 0;
+    color: white;
+    text-decoration: none;
+    width: 20%;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    &:hover {
+        text-shadow: 3px 3px rgb(129, 129, 129);
+    }
+}
+.our-chart-link {
+    top: 16%;
+    left: 79%;
+}
+.current-edition-link {
+    top: 39%;
+    left: 20%;
+}
+.event-schedule-link {
+    top: 62%;
+    left: 50%;
+}   
+@media(max-width: 525px){
+    .current-edition-link, .event-schedule-link, .our-chart-link {
+        font-size: 0.7rem;
+    }
+}
