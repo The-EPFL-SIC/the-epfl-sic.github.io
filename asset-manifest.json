@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.915793a9.css",
-    "main.js": "/static/js/main.1f0b78f5.js",
+    "main.css": "/static/css/main.9c6cd2c9.css",
+    "main.js": "/static/js/main.fa6e8fd8.js",
     "static/media/event_poster_en.png": "/static/media/event_poster_en.108305a7adf8f62ef2a2.png",
     "static/media/photo_mobile.jpg": "/static/media/photo_mobile.3aa8769e251110a8ea17.jpg",
     "static/media/photo_desktop.jpg": "/static/media/photo_desktop.015368f582d9f391debe.jpg",
@@ -52,11 +52,11 @@
     "static/media/logo_eth_sph.svg": "/static/media/logo_eth_sph.3729c82eb63c6a32eee336beefeeb577.svg",
     "static/media/competition_actors_2.svg": "/static/media/competition_actors_2.46cd26a53671dc6d87d0e4e57aa938b5.svg",
     "index.html": "/index.html",
-    "main.915793a9.css.map": "/static/css/main.915793a9.css.map",
-    "main.1f0b78f5.js.map": "/static/js/main.1f0b78f5.js.map"
+    "main.9c6cd2c9.css.map": "/static/css/main.9c6cd2c9.css.map",
+    "main.fa6e8fd8.js.map": "/static/js/main.fa6e8fd8.js.map"
   },
   "entrypoints": [
-    "static/css/main.915793a9.css",
-    "static/js/main.1f0b78f5.js"
+    "static/css/main.9c6cd2c9.css",
+    "static/js/main.fa6e8fd8.js"
   ]
 }
