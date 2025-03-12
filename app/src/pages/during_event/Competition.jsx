@@ -31,10 +31,6 @@ function Competition() {
     }
 
     const CURRENT_EDITION_INFORMATIONS_ELEMENTS_LOCALE = {
-        "page-presentation": {
-            "EN": "Here you will find all the key information about the event, including the speakers, the selected teams, and the jury members.",
-            "FR": "Vous trouverez ici toutes les informations essentielles sur l'événement, notamment les intervenants, les équipes sélectionnées et les membres du jury."
-        },
         "jury": {
             "EN": "The Jury",
             "FR": "Le jury"
@@ -43,9 +39,21 @@ function Competition() {
             "EN": "Selected Teams",
             "FR": "Équipes sélectionnées"
         },
-        "speakers": {
-            "EN": "Speakers",
-            "FR": "Intervenants"
+        "honorary-teams": {
+            "EN": "Honorary teams",
+            "FR": "Sélections honorifiques"
+        },
+        "introduction-to-jury-1": {
+            "EN": "A huge thank you to our esteemed jury members, whose expertise and dedication have helped select the 12 winning teams for this year's Sustainable Innovation Challenge.",
+            "FR": "Un immense merci à nos éminents membres du jury, dont l’expertise et le dévouement ont permis de sélectionner les 12 équipes lauréates de cette édition du Sustainable Innovation Challenge."
+        },
+        "introduction-to-jury-2": {
+            "EN": "Their insights are shaping the future of sustainability-driven innovation, ensuring that each project stays true to its mission of making a positive impact.",
+            "FR": "Leurs perspectives façonnent l'avenir de l'innovation axée sur la durabilité, garantissant que chaque projet reste fidèle à sa mission d'avoir un impact positif."
+        },
+        "introduction-to-jury-3": {
+            "EN": "We are proud to have such an incredible lineup of professionals guiding the next generation of innovators.",
+            "FR": "Nous sommes fiers de pouvoir compter sur un groupe aussi exceptionnel de professionnels pour guider la prochaine génération d'innovateurs."
         }
     }
 
@@ -54,24 +62,22 @@ function Competition() {
             <section className="main">
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                 <main>
-                    <h2>{CURRENT_EDITION_INFORMATIONS_ELEMENTS_LOCALE["speakers"][lang]}</h2>
-                    <div>
-                        
-                    </div>
                     <h2>{CURRENT_EDITION_INFORMATIONS_ELEMENTS_LOCALE["selected-teams"][lang]}</h2>
+                    <div>
+
+                    </div>
+                    <h2>{CURRENT_EDITION_INFORMATIONS_ELEMENTS_LOCALE["honorary-teams"][lang]}</h2>
                     <div>
 
                     </div>
                     <h2>{CURRENT_EDITION_INFORMATIONS_ELEMENTS_LOCALE["jury"][lang]}</h2>
                     <p>
-                        A huge thank you to our esteemed jury members, whose expertise and dedication have helped select the 12 winning teams 
-                        for this year's Sustainable Innovation Challenge.<br/>
-                        Their insights are shaping the future of sustainability-driven innovation, ensuring that each project stays true to its 
-                        mission of making a positive impact. 🌍✨<br/>
-                        We are proud to have such an incredible lineup of professionals guiding the next generation of innovators. 🙌
+                        {CURRENT_EDITION_INFORMATIONS_ELEMENTS_LOCALE["introduction-to-jury-1"][lang]}<br/>
+                        {CURRENT_EDITION_INFORMATIONS_ELEMENTS_LOCALE["introduction-to-jury-2"][lang]}<br/>
+                        {CURRENT_EDITION_INFORMATIONS_ELEMENTS_LOCALE["introduction-to-jury-3"][lang]}<br/>
                     </p>
                     <div>
-
+                        
                     </div>
                 </main>
             </section>

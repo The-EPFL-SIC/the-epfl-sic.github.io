@@ -9,7 +9,7 @@ function Activities() {
 
     useEffect(function() {
         window.scrollTo(0, 0);
-        document.title = `${(lang === "FR")? "activitées" : "activities"} | EPFL Sustainable Innovation Challenge`;
+        document.title = `${(lang === "FR")? "activités" : "activities"} | EPFL Sustainable Innovation Challenge`;
     }, [])
 
     function saveAndChangeLang(language) {
@@ -30,7 +30,18 @@ function Activities() {
     }
 
     const ACTIVITIES_PAGE_ELEMENTS_LOCALE = {
-
+        "speakers": {
+            "EN": "Speakers",
+            "FR": "Intervernants"
+        },
+        "workshops": {
+            "EN": "Workshops",
+            "FR": "Ateliers"
+        },
+        "stands": {
+            "EN": "Stands",
+            "FR": "Stands"
+        }
     }
 
     return (
@@ -38,7 +49,18 @@ function Activities() {
             <section className="main">
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                 <main>
-                    
+                    <h2>{ACTIVITIES_PAGE_ELEMENTS_LOCALE["speakers"][lang]}</h2>
+                    <div>
+
+                    </div>
+                    <h2>{ACTIVITIES_PAGE_ELEMENTS_LOCALE["workshops"][lang]}</h2>
+                    <div>
+
+                    </div>
+                    <h2>{ACTIVITIES_PAGE_ELEMENTS_LOCALE["stands"][lang]}</h2>
+                    <div>
+
+                    </div>
                 </main>
             </section>
             <Footer lang={lang} saveAndChangeLang={saveAndChangeLang} />

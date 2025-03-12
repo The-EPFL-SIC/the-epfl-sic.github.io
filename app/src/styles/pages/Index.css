@@ -288,6 +288,8 @@
     }
 }
 
+
+/* the poster during competition */ 
 .poster {
     position: relative;
     max-width: 800px;
@@ -300,7 +302,10 @@
     width: 100%;
 }
 
-.current-edition-link, .event-schedule-link, .our-chart-link {
+.event-competition-link, 
+.event-activities-link,
+.event-schedule-link, 
+.our-chart-link {
     position: absolute;
     top: 0;
     color: white;
@@ -309,23 +314,35 @@
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
-    transform: translate(-50%, -50%);
     &:hover {
         text-shadow: 3px 3px rgb(129, 129, 129);
     }
 }
-.our-chart-link {
+.event-schedule-link  {
     top: 16%;
     left: 79%;
+    transform: translate(-50%, -50%);
 }
-.current-edition-link {
+.event-competition-link {
     top: 39%;
     left: 20%;
+    transform: translate(-50%, -50%);
 }
-.event-schedule-link {
+.event-activities-link { 
     top: 62%;
     left: 50%;
+    transform: translate(-50%, -50%);
 }   
+.our-chart-link {
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(78, 78, 78);
+    &:hover {
+        text-shadow: 3px 3px rgb(184, 184, 184);
+    }
+}
+
 @media(max-width: 525px){
     .current-edition-link, .event-schedule-link, .our-chart-link {
         font-size: 0.7rem;

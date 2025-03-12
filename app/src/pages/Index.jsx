@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../styles/global.css'
 import '../styles/pages/Index.css'
+
 import ticket_icon from '../assets/icons/ticket.png'
 import logo_white_sic from '../assets/sic/logo_2_blanc.svg'
 import logo_epfl from '../assets/logo/logo_epfl.png'
@@ -76,7 +77,7 @@ function Index() {
         },
         "compagnies": {
             "FR": "Entreprises et ONG",
-            "EN": "Companies & NGOs"
+            "EN": "Companies and NGOs"
         },
         "sic-presentation-1": {
             "FR": "Rejoignez-nous au RLC de Lausanne (EPFL) pour un événement de deux jours dédié à la durabilité, avec une expo réunissant entreprises et monde académique ainsi qu’un challenge étudiant.",
@@ -120,10 +121,15 @@ function Index() {
             "EN": "Schedule",
             to: "/event-schedule"
         },
-        "current-edition-link": {
-            "FR": "Édition 2024-2025",
-            "EN": "2024-2025 edition",
-            to: "/current-event-edition-information"
+        "event-activities-link": {
+            "FR": "Activités",
+            "EN": "Activities",
+            to: "/activities"
+        },
+        "event-competition-link": {
+            "FR": "Le challenge",
+            "EN": "The competition",
+            to: "/the-competition"
         },
         "principal-partners": {
             "FR": "Partenaires principaux",
@@ -135,7 +141,7 @@ function Index() {
         },
         "partner-association-and-commission": {
             "FR": "Associations et commissions partenaires",
-            "EN": "Partner associations & commissions"
+            "EN": "Partner associations and commissions"
         }
     }
 
@@ -179,8 +185,11 @@ function Index() {
                         <Link className="event-schedule-link" to={INDEX_ELEMENTS_LOCALE["event-schedule-link"]["to"]}>
                             {INDEX_ELEMENTS_LOCALE["event-schedule-link"][lang]}
                         </Link>
-                        <Link className="current-edition-link" to={INDEX_ELEMENTS_LOCALE["current-edition-link"]["to"]}>
-                            {INDEX_ELEMENTS_LOCALE["current-edition-link"][lang]}
+                        <Link className="event-activities-link" to={INDEX_ELEMENTS_LOCALE["event-activities-link"]["to"]}>
+                            {INDEX_ELEMENTS_LOCALE["event-activities-link"][lang]}
+                        </Link>
+                        <Link className="event-competition-link" to={INDEX_ELEMENTS_LOCALE["event-competition-link"]["to"]}>
+                            {INDEX_ELEMENTS_LOCALE["event-competition-link"][lang]}
                         </Link>
                     </div> : <>
                         <div className="competition-presentation">

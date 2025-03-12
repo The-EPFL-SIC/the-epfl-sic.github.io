@@ -43,15 +43,14 @@ root.render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<TheBlog /> } />
         <Route path="/blog/:blogPostId" element={<BlogPost /> } />
-
         {
           (is_event_happening) ? 
             [
               <Route path="/event-schedule" element={<Schedule />} />,
+              <Route path="/activities" element={<Activities />} />,
               <Route path="/the-competition" element={<Competition />} />,
               <Route path="/selected-team/:teamId" element={<SelectedTeam />} />,
               <Route path="/speaker/:speakerId" element={<Speaker />} />,
-              <Route path="/activities" element={<Activities />} />
             ]:
             [
               <Route path="/companies" element={<Companies />} />,

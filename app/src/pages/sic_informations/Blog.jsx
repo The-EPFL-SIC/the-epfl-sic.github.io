@@ -30,9 +30,9 @@ function Blog() {
     }
 
     const BLOG_ELEMENTS_LOCALE = {
-        "one-text": {
-            "FR": "french version of the text",
-            "EN": "english version of the text"
+        "introduction-to-blog": {
+            "EN": "Welcome to our blog gallery — a curated collection of inspiring moments, stories, and visuals that capture the essence of our journey.",
+            "FR": "Bienvenue dans notre galerie de blog — une collection soigneusement sélectionnée de moments inspirants, d'histoires et de visuels qui capturent l'essence de notre parcours."
         }
     }
 
@@ -41,7 +41,9 @@ function Blog() {
             <section className="main">
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                 <main>
-                    this is the blog gallery, coming soon
+                    <p>
+                        {BLOG_ELEMENTS_LOCALE["introduction-to-blog"][lang]}
+                    </p>
                 </main>
             </section>
             <Footer lang={lang} saveAndChangeLang={saveAndChangeLang} />

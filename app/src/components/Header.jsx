@@ -17,13 +17,6 @@ function Header({saveAndChangeLang, lang}) {
                 elements: (is_event_happening)? [
                     {
                         display: {
-                            "FR": "Le challenge",
-                            "EN": "The competition"
-                        }, 
-                        to: "/the-competition"
-                    },
-                    {
-                        display: {
                             "FR": "Activités",
                             "EN": "Activities"
                         },
@@ -35,6 +28,13 @@ function Header({saveAndChangeLang, lang}) {
                             "EN": "Schedule"
                         }, 
                         to: "/event-schedule"
+                    },
+                    {
+                        display: {
+                            "FR": "Le challenge",
+                            "EN": "The competition"
+                        }, 
+                        to: "/the-competition"
                     },
                     {
                         display: {
