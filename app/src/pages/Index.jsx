@@ -126,10 +126,10 @@ function Index() {
             "EN": "Activities",
             to: "/activities"
         },
-        "event-competition-link": {
+        "event-challenge-link": {
             "FR": "Le challenge",
-            "EN": "The competition",
-            to: "/the-competition"
+            "EN": "The challenge",
+            to: "/the-challenge"
         },
         "principal-partners": {
             "FR": "Partenaires principaux",
@@ -188,8 +188,8 @@ function Index() {
                         <Link className="event-activities-link" to={INDEX_ELEMENTS_LOCALE["event-activities-link"]["to"]}>
                             {INDEX_ELEMENTS_LOCALE["event-activities-link"][lang]}
                         </Link>
-                        <Link className="event-competition-link" to={INDEX_ELEMENTS_LOCALE["event-competition-link"]["to"]}>
-                            {INDEX_ELEMENTS_LOCALE["event-competition-link"][lang]}
+                        <Link className="event-challenge-link" to={INDEX_ELEMENTS_LOCALE["event-challenge-link"]["to"]}>
+                            {INDEX_ELEMENTS_LOCALE["event-challenge-link"][lang]}
                         </Link>
                     </div> : <>
                         <div className="competition-presentation">
@@ -214,7 +214,7 @@ function Index() {
                         </div>
                         <div className="competition-actor">
                             <img src={competition_actors} alt="competition actors"/>
-                            <Link className="link-to-student" to="/competition">{INDEX_ELEMENTS_LOCALE["student-team"][lang]}</Link>
+                            <Link className="link-to-student" to="/challenge-inscription">{INDEX_ELEMENTS_LOCALE["student-team"][lang]}</Link>
                             <Link className="link-to-lab" to="/labs">{INDEX_ELEMENTS_LOCALE["labs"][lang]}</Link>
                             <Link className="link-to-companies" to="/companies">{INDEX_ELEMENTS_LOCALE["compagnies"][lang]}</Link>
                             <p className="link-to-public">Public</p>

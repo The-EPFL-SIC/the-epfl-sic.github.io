@@ -3,14 +3,14 @@ import '../../styles/pages/Contact.css'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
-function Competition() {
+function Challenge() {
     // the default language of the website is english
     let storedLang = localStorage.getItem('prefered-language') ?? "EN"; 
     let [lang, changeLang] = useState(storedLang);
 
     useEffect(function() {
         window.scrollTo(0, 0);
-        document.title = `${(lang === "FR")? "la compétition" : "the challenge"} | EPFL Sustainable Innovation Challenge`;
+        document.title = `${(lang === "FR")? "le challenge" : "the challenge"} | EPFL Sustainable Innovation Challenge`;
     }, []) 
 
     function saveAndChangeLang(language) {
@@ -77,7 +77,7 @@ function Competition() {
                         {CURRENT_EDITION_INFORMATIONS_ELEMENTS_LOCALE["introduction-to-jury-3"][lang]}<br/>
                     </p>
                     <div>
-                        
+
                     </div>
                 </main>
             </section>
@@ -86,4 +86,4 @@ function Competition() {
     )
 }
 
-export default Competition
+export default Challenge

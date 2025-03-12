@@ -16,7 +16,7 @@ function Competition() {
 
     useEffect(function() {
         window.scrollTo(0, 0);
-        document.title = `${(lang === "FR")? "la compétition" : "the competition"} | EPFL Sustainable Innovation Challenge`;
+        document.title = `${(lang === "FR")? "inscription au challenge" : "challenge inscription"} | EPFL Sustainable Innovation Challenge`;
     }, [])
 
     function saveAndChangeLang(language) {

@@ -18,11 +18,11 @@ import BlogPost from './pages/sic_informations/BlogPost'
 // the pages that are used before and between competitions to register participation 
 import Companies from './pages/between_events/Companies'
 import Labs from './pages/between_events/Labs'
-import CompetitionInscription from './pages/between_events/CompetitionInscription'
+import ChallengeInscription from './pages/between_events/ChallengeInscription'
 
 // the pages that are used during the competition
 import Schedule from './pages/during_event/Schedule'
-import  Competition from './pages/during_event/Competition'
+import  Challenge from './pages/during_event/Challenge'
 import Activities from './pages/during_event/Activities'
 import SelectedTeam from './pages/during_event/SelectedTeam'
 import Speaker from './pages/during_event/Speaker'
@@ -48,14 +48,14 @@ root.render(
             [
               <Route path="/event-schedule" element={<Schedule />} />,
               <Route path="/activities" element={<Activities />} />,
-              <Route path="/the-competition" element={<Competition />} />,
+              <Route path="/the-challenge" element={<Challenge />} />,
               <Route path="/selected-team/:teamId" element={<SelectedTeam />} />,
               <Route path="/speaker/:speakerId" element={<Speaker />} />,
             ]:
             [
               <Route path="/companies" element={<Companies />} />,
               <Route path="/labs" element={<Labs />} />,
-              <Route path="/competition" element={<CompetitionInscription />} />
+              <Route path="/challenge-inscription" element={<ChallengeInscription />} />
             ]
           }
         <Route path="*" element={<Navigate to="/" replace />} />

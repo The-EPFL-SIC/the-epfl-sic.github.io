@@ -32,9 +32,9 @@ function Header({saveAndChangeLang, lang}) {
                     {
                         display: {
                             "FR": "Le challenge",
-                            "EN": "The competition"
+                            "EN": "The challenge"
                         }, 
-                        to: "/the-competition"
+                        to: "/the-challenge"
                     },
                     {
                         display: {
@@ -45,13 +45,6 @@ function Header({saveAndChangeLang, lang}) {
                     }
                 ] : 
                 [
-                    {
-                        display: {
-                            "FR": "Compétition",
-                            "EN": "Competition"
-                        }, 
-                        to: "/competition"
-                    },
                     {
                         display: {
                             "FR": "Entreprises",
@@ -65,6 +58,13 @@ function Header({saveAndChangeLang, lang}) {
                             "EN": "Labs"
                         }, 
                         to: "/labs"
+                    },
+                    {
+                        display: {
+                            "FR": "Le challenge",
+                            "EN": "The challenge"
+                        }, 
+                        to: "/challenge-inscription"
                     },
                     {
                         display: {

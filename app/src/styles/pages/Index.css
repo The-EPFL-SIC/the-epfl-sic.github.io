@@ -302,7 +302,7 @@
     width: 100%;
 }
 
-.event-competition-link, 
+.event-challenge-link, 
 .event-activities-link,
 .event-schedule-link, 
 .our-chart-link {
@@ -323,7 +323,7 @@
     left: 79%;
     transform: translate(-50%, -50%);
 }
-.event-competition-link {
+.event-challenge-link {
     top: 39%;
     left: 20%;
     transform: translate(-50%, -50%);
