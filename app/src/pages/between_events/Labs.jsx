@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import '../styles/pages/Informations.css'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
+import '../../styles/pages/Informations.css'
 
-import goal_icon from '../assets/icons/goal.png'
-import commitment_icon from '../assets/icons/commitment.png'
-import offer_icon from '../assets/icons/offer.png'
+import goal_icon from '../../assets/icons/goal.png'
+import commitment_icon from '../../assets/icons/commitment.png'
+import offer_icon from '../../assets/icons/offer.png'
 
 function Labs() {
     // the default language of the website is english

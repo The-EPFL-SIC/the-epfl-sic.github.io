@@ -19,16 +19,6 @@ function ScheduleTable({scheduleData}) {
         return a < b
     }
 
-    function checkIsHourSmallerOrEqual(a, b) {
-        let [hA, minA] = a.split("h")
-        a = (+hA) * 60 + (+minA)
-
-        let [hB, minB] = b.split("h")
-        b = (+hB) * 60 + (+minB)
-
-        return a <= b
-    }
-
     function getCellType(location, timeStart) {
         let eventStarts = location["events"].find(event => timeStart === event.start)
         if(eventStarts) {

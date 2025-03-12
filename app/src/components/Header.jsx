@@ -4,6 +4,8 @@ import '../styles/components/Header.css'
 import ScrollableMenu from './ScrollableMenu';
 import logo from '../assets/sic/logo.svg'
 
+import is_event_happening from '../is_event_happening';
+
 function Header({saveAndChangeLang, lang}) {
     const HEADER_ELEMENTS_LOCALE = {
         "scrollableElements": [
@@ -12,9 +14,37 @@ function Header({saveAndChangeLang, lang}) {
                     "FR": "Evenements",
                     "EN": "Events"
                 },
-                elements: [
-                    // to uncomment after the event
-                    /*
+                elements: (is_event_happening)? [
+                    {
+                        display: {
+                            "FR": "Le challenge",
+                            "EN": "The competition"
+                        }, 
+                        to: "/the-competition"
+                    },
+                    {
+                        display: {
+                            "FR": "Activités",
+                            "EN": "Activities"
+                        },
+                        to: "/activities"
+                    },
+                    {
+                        display: {
+                            "FR": "Horaires",
+                            "EN": "Schedule"
+                        }, 
+                        to: "/event-schedule"
+                    },
+                    {
+                        display: {
+                            "FR": "Le blog",
+                            "EN": "The blog"
+                        }, 
+                        to: "/blog"
+                    }
+                ] : 
+                [
                     {
                         display: {
                             "FR": "Compétition",
@@ -35,21 +65,6 @@ function Header({saveAndChangeLang, lang}) {
                             "EN": "Labs"
                         }, 
                         to: "/labs"
-                    }
-                    */
-                    {
-                        display: {
-                            "FR": "Horaires",
-                            "EN": "Schedule"
-                        }, 
-                        to: "/event-schedule"
-                    },
-                    {
-                        display: {
-                            "FR": "Edition 2025",
-                            "EN": "2025 Edition"
-                        }, 
-                        to: "/current-event-edition-information"
                     },
                     {
                         display: {

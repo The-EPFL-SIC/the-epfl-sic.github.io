@@ -6,24 +6,17 @@ import '../styles/global.css'
 import '../styles/pages/Index.css'
 import ticket_icon from '../assets/icons/ticket.png'
 import logo_white_sic from '../assets/sic/logo_2_blanc.svg'
-import logo_carbon_removal_booster from '../assets/logo/logo_carbon_removal_booster.png'
 import logo_epfl from '../assets/logo/logo_epfl.png'
-import logo_eth_sph from '../assets/logo/logo_eth_sph.svg'
-import logo_epfl_cctc from '../assets/logo/logo_epfl_cctc.png'
-
-import logo_castor_freegan from '../assets/logo/logo_castor_freegan.png'
-import logo_chocopoly from '../assets/logo/logo_chocopoly.png'
-import logo_fustic from '../assets/logo/logo_fustic.png'
-import logo_climate_robotics from '../assets/logo/logo_climate_robotics.png'
-import logo_artepoly from '../assets/logo/logo_artepoly.png'
-import logo_e4s from '../assets/logo/logo_e4s.png'
-import logo_cleantech_alps from '../assets/logo/logo_cleantech_alps.png'
-import logo_ingenieur_du_monde from '../assets/logo/logo_ingenieur_du_monde.png'
-import logo_zero_emission_group from '../assets/logo/logo_zero_emission_group.png'
 
 import competition_actors from '../assets/sic/informations/competition_actors_2.svg'
 import event_poster_en from '../assets/sic/informations/event_poster_en.png'
 import event_poster_fr from '../assets/sic/informations/event_poster_fr.png'
+
+import partner_associations from '../data/partners_associations'
+import partner_associations_and_commissions from '../data/partners_commissions'
+import principal_partners from '../data/partners_principal'
+
+import is_event_happening from '../is_event_happening';
 
 function Index() {
     // the default language of the website is english
@@ -146,93 +139,21 @@ function Index() {
         }
     }
 
-    const principal_partners = [
-        {
-            "name": "Carbon removal booster",
-            "link": "https://www.cdr-booster.ch/",
-            "logo": logo_carbon_removal_booster
-        },
-        {
-            "name": "EPFL",
-            "link": "https://www.epfl.ch/",
-            "logo": logo_epfl
-        },
-        {
-            "name": "EPFL CCTC",
-            "link": "https://www.epfl.ch/education/educational-initiatives/educational-initiatives/transversal-skills-and-career-center/",
-            "logo": logo_epfl_cctc
-        },
-        {
-            "name": "SPH ETH",
-            "link": "https://sph.ethz.ch/",
-            "logo": logo_eth_sph
-        }
-    ]
-
-    const partner_associations = [
-        {
-            "name": "cleantech alps",
-            "link": "",
-            "logo": logo_cleantech_alps
-        },
-        {
-            "name": "e4s",
-            "link": "",
-            "logo": logo_e4s
-        },
-        {
-            "name": "fustic",
-            "link": "",
-            "logo": logo_fustic
-        },
-        {
-            "name": "climate robotics",
-            "link": "",
-            "logo": logo_climate_robotics
-        },
-    ]
-
-    const partner_associations_and_commissions = [
-        {
-            "name": "zero emission group",
-            "link": "",
-            "logo": logo_zero_emission_group
-        },
-        {
-            "name": "ingénieur du monde",
-            "link": "",
-            "logo": logo_ingenieur_du_monde
-        },
-        {
-            "name": "artepoly",
-            "link": "",
-            "logo": logo_artepoly
-        },
-        {
-            "name": "chocopoloy",
-            "link": "",
-            "logo": logo_chocopoly
-        },
-        {
-            "name": "le castor freegan",
-            "link": "",
-            "logo": logo_castor_freegan
-        },
-    ]
-
     return (
         <>
             <section className="welcome-page">
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                 <article>
-                    <a className="get-your-ticket" href="https://www.eventbrite.com/e/epfl-sustainable-innovation-challenge-tickets-1248211717849?aff=oddtdtcreator">
-                        <img src={ticket_icon} alt="ticket"/>
-                        <div>
-                            {INDEX_ELEMENTS_LOCALE["schedule"][lang]}<br/>
-                            <span className="special-char"> & </span>
-                            {INDEX_ELEMENTS_LOCALE["tickets"][lang]}
-                        </div>
-                    </a>
+                    {
+                        (is_event_happening)? <a className="get-your-ticket" href="https://www.eventbrite.com/e/epfl-sustainable-innovation-challenge-tickets-1248211717849?aff=oddtdtcreator">
+                            <img src={ticket_icon} alt="ticket"/>
+                            <div>
+                                {INDEX_ELEMENTS_LOCALE["schedule"][lang]}<br/>
+                                <span className="special-char"> & </span>
+                                {INDEX_ELEMENTS_LOCALE["tickets"][lang]}
+                            </div>
+                        </a> : null
+                    }
                     <h1>
                         EPFL<span className="special-char">'</span>s <br/>
                         Sustainable <br/>
@@ -250,9 +171,18 @@ function Index() {
             </section>
             <section className="sic-presentation">
                 {
-                    // to keep visible between the events
-                    /*
-                    <>
+                    (is_event_happening)? <div className="poster">
+                        <img src={(lang === "EN")? event_poster_en : event_poster_fr} alt={INDEX_ELEMENTS_LOCALE["event-poster"][lang]} />
+                        <Link className="our-chart-link" to={INDEX_ELEMENTS_LOCALE["our-chart-link"]["to"]}>
+                            {INDEX_ELEMENTS_LOCALE["our-chart-link"][lang]}
+                        </Link>
+                        <Link className="event-schedule-link" to={INDEX_ELEMENTS_LOCALE["event-schedule-link"]["to"]}>
+                            {INDEX_ELEMENTS_LOCALE["event-schedule-link"][lang]}
+                        </Link>
+                        <Link className="current-edition-link" to={INDEX_ELEMENTS_LOCALE["current-edition-link"]["to"]}>
+                            {INDEX_ELEMENTS_LOCALE["current-edition-link"][lang]}
+                        </Link>
+                    </div> : <>
                         <div className="competition-presentation">
                             <div className="image"></div>
                             <div className="text">
@@ -281,22 +211,6 @@ function Index() {
                             <p className="link-to-public">Public</p>
                         </div>
                     </>
-                    */
-                }
-                {
-                    // to keep visible during the event
-                    <div className="poster">
-                        <img src={(lang === "EN")? event_poster_en : event_poster_fr} alt={INDEX_ELEMENTS_LOCALE["event-poster"][lang]} />
-                        <Link className="our-chart-link" to={INDEX_ELEMENTS_LOCALE["our-chart-link"]["to"]}>
-                            {INDEX_ELEMENTS_LOCALE["our-chart-link"][lang]}
-                        </Link>
-                        <Link className="event-schedule-link" to={INDEX_ELEMENTS_LOCALE["event-schedule-link"]["to"]}>
-                            {INDEX_ELEMENTS_LOCALE["event-schedule-link"][lang]}
-                        </Link>
-                        <Link className="current-edition-link" to={INDEX_ELEMENTS_LOCALE["current-edition-link"]["to"]}>
-                            {INDEX_ELEMENTS_LOCALE["current-edition-link"][lang]}
-                        </Link>
-                    </div>
                 }
             </section>
             <section className="partners">

@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
-import '../styles/pages/Schedule.css'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import SwitchButton from '../components/SwitchButton'
-import ScheduleTable from '../components/ScheduleTable'
-import schedule_data from '../data/schedule_data.json'
+import '../../styles/pages/Schedule.css'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
+import SwitchButton from '../../components/SwitchButton'
+import ScheduleTable from '../../components/ScheduleTable'
+import schedule_data from '../../data/schedule_data.json'
 
 function Schedule() {
     // the default language of the website is english

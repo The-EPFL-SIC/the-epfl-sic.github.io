@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from 'react'
 import { pdfjs, Document, Page } from 'react-pdf'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import '../styles/components/PdfViewer.css'
-import sic_status from '../assets/sic/files/status-epfl-sic.pdf'
-import sic_status_signed from '../assets/sic/files/status-epfl-sic-signed.pdf'
-import sic_ag_signed from '../assets/sic/files/ag-epfl-sic-signed.pdf'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
+import '../../styles/components/PdfViewer.css'
+import sic_status from '../../assets/sic/files/status-epfl-sic.pdf'
+import sic_status_signed from '../../assets/sic/files/status-epfl-sic-signed.pdf'
+import sic_ag_signed from '../../assets/sic/files/ag-epfl-sic-signed.pdf'
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',

@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import student_timeline_fr from '../assets/sic/informations/timeline_white_fr.svg'
-import student_timeline_en from '../assets/sic/informations/timeline_white_en.svg'
-import '../styles/pages/Competition.css'
-import '../styles/pages/Informations.css'
-import exhibition_icon from '../assets/icons/exhibition.png'
-import networks_icon from '../assets/icons/networks.png'
-import awards_icon from '../assets/icons/awards.png'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
+import student_timeline_fr from '../../assets/sic/informations/timeline_white_fr.svg'
+import student_timeline_en from '../../assets/sic/informations/timeline_white_en.svg'
+import '../../styles/pages/Competition.css'
+import '../../styles/pages/Informations.css'
+import exhibition_icon from '../../assets/icons/exhibition.png'
+import networks_icon from '../../assets/icons/networks.png'
+import awards_icon from '../../assets/icons/awards.png'
 
 function Competition() {
     // the default language of the website is english

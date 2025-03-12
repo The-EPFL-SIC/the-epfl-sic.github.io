@@ -1,6 +1,5 @@
 import '../styles/components/SwitchButton.css'
 
-
 function SwitchButton({
     option1,
     option2,
@@ -15,7 +14,5 @@ function SwitchButton({
         </div>
     )
 }
-
-
 
 export default SwitchButton

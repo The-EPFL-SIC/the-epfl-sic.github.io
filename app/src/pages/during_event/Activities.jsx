@@ -1,17 +1,16 @@
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
-function BlogPost() {
+function Activities() {
     // the default language of the website is english
     let storedLang = localStorage.getItem('prefered-language') ?? "EN"; 
     let [lang, changeLang] = useState(storedLang);
 
     useEffect(function() {
         window.scrollTo(0, 0);
-        document.title = `${(lang === "FR")? "article du blog" : "blog post"} | EPFL Sustainable Innovation Challenge`;
-    }, []) 
+        document.title = `${(lang === "FR")? "activitées" : "activities"} | EPFL Sustainable Innovation Challenge`;
+    }, [])
 
     function saveAndChangeLang(language) {
         switch(language) {
@@ -30,22 +29,16 @@ function BlogPost() {
         changeLang(language);
     }
 
-    // the page content
-    const SELECTED_TEAM_ELEMENTS_LOCALE = {
-        "one-text": {
-            "FR": "french version of the text",
-            "EN": "english version of the text"
-        }
-    }
+    const ACTIVITIES_PAGE_ELEMENTS_LOCALE = {
 
-    const { blogPostId } = useParams()
+    }
 
     return (
         <div className="flexer">
             <section className="main">
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                 <main>
-                    this is a blog post with id '{blogPostId}'
+                    
                 </main>
             </section>
             <Footer lang={lang} saveAndChangeLang={saveAndChangeLang} />
@@ -53,4 +46,4 @@ function BlogPost() {
     )
 }
 
-export default BlogPost
+export default Activities

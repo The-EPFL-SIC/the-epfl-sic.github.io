@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import '../styles/pages/Contact.css'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import '../../styles/pages/Contact.css'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 function Contact() {
     // the default language of the website is english

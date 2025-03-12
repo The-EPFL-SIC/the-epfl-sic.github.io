@@ -11,7 +11,10 @@
     padding-inline: 1rem; 
 }
 
-.nav-elem-dropdown {
+.nav-elem-dropdown-1, 
+.nav-elem-dropdown-2, 
+.nav-elem-dropdown-3, 
+.nav-elem-dropdown-4 {
     position: absolute;
     top: 3rem;
     padding-top: 0rem;
@@ -21,9 +24,13 @@
     overflow: hidden;
     transition: 0ms height, 0ms padding;
     z-index: 2;
-} 
+}
 
-.nav-elem-dropdown ul {
+.nav-elem-dropdown-1 ul,
+.nav-elem-dropdown-2 ul,
+.nav-elem-dropdown-3 ul,
+.nav-elem-dropdown-4 ul
+{
     background: rgb(0, 88, 57);
     list-style: none;
     margin-block: 1rem;
@@ -33,13 +40,34 @@
     font-size: 1rem;
 }
 
-.nav-elem:hover .nav-elem-dropdown {
-    height: 6rem;
+.nav-elem:hover .nav-elem-dropdown-1,
+.nav-elem:hover .nav-elem-dropdown-2,
+.nav-elem:hover .nav-elem-dropdown-3,
+.nav-elem:hover .nav-elem-dropdown-4 {
     padding-top: 2rem;
     transition: 250ms height, 250ms padding;
 }
 
-.nav-elem-dropdown a {
+.nav-elem:hover .nav-elem-dropdown-1 {
+    height: 3rem;
+}
+
+.nav-elem:hover .nav-elem-dropdown-2 {
+    height: 4.5rem;
+}
+
+.nav-elem:hover .nav-elem-dropdown-3 {
+    height: 6rem;
+}
+
+.nav-elem:hover .nav-elem-dropdown-4 {
+    height: 7.5rem;
+}
+
+.nav-elem-dropdown-1 a,
+.nav-elem-dropdown-2 a, 
+.nav-elem-dropdown-3 a,
+.nav-elem-dropdown-4 a {
     white-space: nowrap;
     text-decoration: none;
     color: white;

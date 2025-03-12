@@ -2,30 +2,34 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 
-// the page that are always used
+// the main page
 import Index from './pages/Index'
-import Members from './pages/Members'
-import Contact from './pages/Contact'
-import OurEngagement from './pages/OurEngagement'
-import PvStatusAg from './pages/PvStatusAg'
+
+// the page about sic
+import Members from './pages/sic_informations/Members'
+import OurEngagement from './pages/sic_informations/OurEngagement'
+import PvStatusAg from './pages/sic_informations/PvStatusAg'
+import Contact from './pages/sic_informations/Contact'
 
 // the blog 
-import TheBlog from './pages/Blog'
-import BlogPost from './pages/BlogPost'
+import TheBlog from './pages/sic_informations/Blog'
+import BlogPost from './pages/sic_informations/BlogPost'
 
 // the pages that are used before and between competitions to register participation 
-import Companies from './pages/Companies'
-import Labs from './pages/Labs'
-import Competition from './pages/Competition'
+import Companies from './pages/between_events/Companies'
+import Labs from './pages/between_events/Labs'
+import CompetitionInscription from './pages/between_events/CompetitionInscription'
 
 // the pages that are used during the competition
-import  CurrentEditionInformation from './pages/CurrentEditionInformation'
-import Schedule from './pages/Schedule'
-import Jury from './pages/Jury'
-import SelectedTeam from './pages/SelectedTeam'
+import Schedule from './pages/during_event/Schedule'
+import  Competition from './pages/during_event/Competition'
+import Activities from './pages/during_event/Activities'
+import SelectedTeam from './pages/during_event/SelectedTeam'
+import Speaker from './pages/during_event/Speaker'
 
-// this is only imported to display the empty page template 
-import EmptyPageTemplate from './pages/template/EmptyPageTemplate'
+// a boolean to multiplex between the two version of the site
+// during event and between events
+import is_event_happening from './is_event_happening'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -41,29 +45,20 @@ root.render(
         <Route path="/blog/:blogPostId" element={<BlogPost /> } />
 
         {
-          // disable those routes during the competition
-          // and reenable them after the competition
-          /*
+          (is_event_happening) ? 
             [
-              <Route path="/companies" element={<Companies/>} />,
-              <Route path="/labs" element={<Labs/>} />,
-              <Route path="/competition" element={<Competition/>} />
-            ] 
-          */
-        }  
-
-        { 
-          // enable those routes just before and during the competition
-          // disable them after the competition
-          [
-            <Route path="/current-event-edition-information" element={<CurrentEditionInformation />} />,
-            <Route path="/event-schedule" element={<Schedule />} />,
-            <Route path="/jury/:juryId" element={<Jury />} />,
-            <Route path="/selected-team/:teamId" element={<SelectedTeam />} />
-          ]
-        }
-
-        <Route path="/empty-page-template" element={<EmptyPageTemplate />} />
+              <Route path="/event-schedule" element={<Schedule />} />,
+              <Route path="/the-competition" element={<Competition />} />,
+              <Route path="/selected-team/:teamId" element={<SelectedTeam />} />,
+              <Route path="/speaker/:speakerId" element={<Speaker />} />,
+              <Route path="/activities" element={<Activities />} />
+            ]:
+            [
+              <Route path="/companies" element={<Companies />} />,
+              <Route path="/labs" element={<Labs />} />,
+              <Route path="/competition" element={<CompetitionInscription />} />
+            ]
+          }
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>

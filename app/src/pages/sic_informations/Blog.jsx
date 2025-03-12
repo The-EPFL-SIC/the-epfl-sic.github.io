@@ -1,16 +1,15 @@
 import { useState, useEffect } from 'react'
-import '../styles/pages/Contact.css'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
-function CurrentEditionInformation() {
+function Blog() {
     // the default language of the website is english
     let storedLang = localStorage.getItem('prefered-language') ?? "EN"; 
     let [lang, changeLang] = useState(storedLang);
 
     useEffect(function() {
         window.scrollTo(0, 0);
-        document.title = `${(lang === "FR")? "l'edition 2025" : "the 2025 edition"} | EPFL Sustainable Innovation Challenge`;
+        document.title = `${(lang === "FR")? "le blog" : "the blog"} | EPFL Sustainable Innovation Challenge`;
     }, []) 
 
     function saveAndChangeLang(language) {
@@ -30,7 +29,7 @@ function CurrentEditionInformation() {
         changeLang(language);
     }
 
-    const SELECTED_TEAM_ELEMENTS_LOCALE = {
+    const BLOG_ELEMENTS_LOCALE = {
         "one-text": {
             "FR": "french version of the text",
             "EN": "english version of the text"
@@ -42,7 +41,7 @@ function CurrentEditionInformation() {
             <section className="main">
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                 <main>
-                    those are the information for the current edition, coming soon
+                    this is the blog gallery, coming soon
                 </main>
             </section>
             <Footer lang={lang} saveAndChangeLang={saveAndChangeLang} />
@@ -50,4 +49,4 @@ function CurrentEditionInformation() {
     )
 }
 
-export default CurrentEditionInformation
+export default Blog

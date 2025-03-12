@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import { pdfjs, Document, Page } from 'react-pdf'
-import sic_chart from '../assets/sic/files/charte-epfl-sic.pdf'
-import '../styles/components/PdfViewer.css'
+import sic_chart from '../../assets/sic/files/charte-epfl-sic.pdf'
+import '../../styles/components/PdfViewer.css'
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
