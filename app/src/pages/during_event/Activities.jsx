@@ -3,9 +3,12 @@ import { useState, useEffect } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import SpeakerCard from '../../components/SpeakerCard'
+import CompanyStandCard from '../../components/CompanyStandCard'
 
 import speakers from '../../data/activities/speakers'
-
+import companies_stands from '../../data/activities/companies_stands'
+import workshops from '../../data/activities/workshops'
+import WorkshopCard from '../../components/WorkshopCard'
 
 function Activities() {
     // the default language of the website is english
@@ -60,11 +63,11 @@ function Activities() {
                     </div>
                     <h2>{ACTIVITIES_PAGE_ELEMENTS_LOCALE["workshops"][lang]}</h2>
                     <div className="gallery">
-
+                        {workshops.map(workshop => <WorkshopCard workshop_data={workshop} />) }
                     </div>
                     <h2>{ACTIVITIES_PAGE_ELEMENTS_LOCALE["stands"][lang]}</h2>
                     <div className="gallery">
-
+                        {companies_stands.map(company_stand => <CompanyStandCard company_stand_data={company_stand} />)}
                     </div>
                 </main>
             </section>

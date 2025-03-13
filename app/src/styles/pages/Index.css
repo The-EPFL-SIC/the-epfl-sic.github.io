@@ -348,3 +348,18 @@
         font-size: 0.7rem;
     }
 }
+
+.main-link {
+    display: block;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    gap: 2rem;
+
+}
+.main-link img {
+    height: 3rem;
+}

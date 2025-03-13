@@ -28,12 +28,13 @@ table td {
     border: 2px solid rgb(125, 85, 206);
 }
 .marked-as-special-format-event {
-    background-color: rgb(215, 165, 190);
-    border: 2px solid rgb(211, 79, 145);
-}
-.marked-as-workshops {
+    color: black;
     background-color: rgb(255, 230, 155);
     border: 2px solid rgb(255, 209, 69);
+}
+.marked-as-workshops {
+    background-color: rgb(215, 165, 190);
+    border: 2px solid rgb(211, 79, 145);
 }
 
 .schedule-legend > div {

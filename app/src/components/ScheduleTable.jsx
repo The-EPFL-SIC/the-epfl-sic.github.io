@@ -32,7 +32,6 @@ function ScheduleTable({scheduleData}) {
             if(location["events"].find(event => (checkIsHourStrictlySmaller(event.start, timeStart) && (event.end === "onwards" || checkIsHourStrictlySmaller(timeStart, event.end))))) {
                 // don't create an empty cell
                 // when we already have an event that is occupying the cell but started earlier
-                console.log("no cell at", timeStart, " for location: ", location.name)
                 return null
             } else {
                 // return an empty cell

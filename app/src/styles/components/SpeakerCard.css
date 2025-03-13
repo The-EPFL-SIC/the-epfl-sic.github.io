@@ -1,0 +1,13 @@
+.speaker-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    background-color: rgb(111, 173, 72);
+    border: 2px solid rgb(58, 124, 18);
+    color: black;
+    text-decoration: none;
+}
+
+.speaker-card p {
+    text-align: left;
+}

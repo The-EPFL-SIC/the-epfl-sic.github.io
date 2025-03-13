@@ -111,7 +111,8 @@ const speakers = [
     {
         "name": "Christophe Ballif",
         "id": "christophe-ballif",
-        "role": "",
+        "role": "PR Christophe Ballif is a teacher here at the EPFL. He is director of the Photovoltaics and Thin Film Electronics Laboratory in Neuchatel. \
+                In 2016, he received the Becquerel prize for his contributions to the field of high efficiency photovoltaics.",
         "title": "Energy transition made easy: a quick travel between myths and reality, between Switzerland and China, with a closer look to photovoltaics",
         "abstract": "In the first part of the presentation, we'll illustrate the enormous challenge for a transition to a carbon neutral world. Through simple,\
                     but often ignored, calculations, we'll show that the core of the transition worldwide must realistically be based mostly on solar and wind electricity. \

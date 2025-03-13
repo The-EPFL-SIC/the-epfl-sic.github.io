@@ -5,7 +5,12 @@ import Footer from '../components/Footer'
 import '../styles/global.css'
 import '../styles/pages/Index.css'
 
+import event_booklet from '../assets/sic/files/event-booklet.pdf'
+
 import ticket_icon from '../assets/icons/ticket.png'
+import camera_video_icon from '../assets/icons/camera_video.png'
+import magazine_icon from '../assets/icons/magazine.png'
+
 import logo_epfl from '../assets/logo/logo_epfl.png'
 
 import competition_actors from '../assets/sic/informations/competition_actors_2.svg'
@@ -63,6 +68,15 @@ function Index() {
         "tickets": {
             "FR": "billets",
             "EN": "tickets"
+        },
+        "live-stream": {
+            "EN": "Live stream of the even",
+            "FR": "Diffusion en direct de l'évènement",
+            "to": "https://epfl.zoom.us/j/63806755805?pwd=ZVejlH4bYXBzTJ9S2unJIGJT9yebz0.1"
+        },
+        "booklet": {
+            "EN": "Get the booklet — everything you need to know!",
+            "FR": "Téléchargez le livret — tout ce qu'il faut savoir !"
         },
         "student-team": {
             "FR": "Etudiants",
@@ -152,13 +166,13 @@ function Index() {
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                 {
                         (is_event_happening)? <a className="get-your-ticket" href="https://www.eventbrite.com/e/epfl-sustainable-innovation-challenge-tickets-1248211717849?aff=oddtdtcreator">
-                            <img src={ticket_icon} alt="ticket"/>
-                            <div>
-                                {INDEX_ELEMENTS_LOCALE["schedule"][lang]}<br/>
-                                <span className="special-char"> & </span>
-                                {INDEX_ELEMENTS_LOCALE["tickets"][lang]}
-                            </div>
-                        </a> : null
+                                <img src={ticket_icon} alt="ticket"/>
+                                <div>
+                                    {INDEX_ELEMENTS_LOCALE["schedule"][lang]}<br/>
+                                    <span className="special-char"> & </span>
+                                    {INDEX_ELEMENTS_LOCALE["tickets"][lang]}
+                                </div>
+                            </a> : null
                 }
                 <article>
                     <h1>
@@ -173,6 +187,18 @@ function Index() {
                         <strong>{INDEX_ELEMENTS_LOCALE["date"][lang]}</strong><br/>
                         <strong>EPFL Rolex Learning Center</strong>
                     </p>
+                    {
+                        (is_event_happening)? <>
+                            <a className="main-link" href={INDEX_ELEMENTS_LOCALE["live-stream"]["to"]}>
+                                <img src={camera_video_icon} alt="camera" />
+                                {INDEX_ELEMENTS_LOCALE["live-stream"][lang]}
+                            </a>
+                            <a className="main-link" href={event_booklet}>
+                                <img src={magazine_icon} alt="booklet" />
+                                {INDEX_ELEMENTS_LOCALE["booklet"][lang]}
+                            </a>
+                        </>: null 
+                    }
                 </article>
             </section>
             <section className="sic-presentation">

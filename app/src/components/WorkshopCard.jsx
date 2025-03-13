@@ -1,12 +1,12 @@
-import '../styles/components/TeamCard.css'
+import '../styles/components/WorkshopCard.css'
 import { Link } from 'react-router-dom'
 
 function WorkshopCard({workshop_data}) {
     let fullPageUrl =  `/workshop/${workshop_data["id"]}`
 
     return (
-        <Link className="team-card" to={fullPageUrl} key={workshop_data["id"]}>
-            <h2>{workshop_data["name"]}</h2>
+        <Link className="workshop-card" to={fullPageUrl} key={workshop_data["id"]}>
+            <h2>{workshop_data["organizer"]}</h2>
             <p>{workshop_data["short-description"]}</p>
         </Link>
     )

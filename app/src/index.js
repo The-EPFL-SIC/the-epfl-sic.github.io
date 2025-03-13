@@ -26,6 +26,8 @@ import  Challenge from './pages/during_event/Challenge'
 import Activities from './pages/during_event/Activities'
 import TeamPresentation from './pages/during_event/TeamPresentation'
 import Speaker from './pages/during_event/Speaker'
+import Workshop from './pages/during_event/Workshop'
+import CompanyStand from './pages/during_event/CompanyStand'
 
 // a boolean to multiplex between the two version of the site
 // during event and between events
@@ -52,6 +54,8 @@ root.render(
               <Route path="/selected-team/:teamId" element={<TeamPresentation />} />,
               <Route path="/honorific-team/:teamId" element={<TeamPresentation />} />,
               <Route path="/speaker/:speakerId" element={<Speaker />} />,
+              <Route path="/workshop/:workshopId" element={<Workshop />} />,
+              <Route path="/company-stand/:companyStand" element={<CompanyStand />} />,
             ]:
             [
               <Route path="/companies" element={<Companies />} />,
