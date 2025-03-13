@@ -1,16 +1,17 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
-function SelectedTeam() {
+function TeamPresentation() {
     // the default language of the website is english
     let storedLang = localStorage.getItem('prefered-language') ?? "EN"; 
     let [lang, changeLang] = useState(storedLang);
 
     useEffect(function() {
         window.scrollTo(0, 0);
-        document.title = `${(lang === "FR")? "équipe sélectionnée" : "selected team"} | EPFL Sustainable Innovation Challenge`;
+        document.title = `${(lang === "FR")? "présentation d'équipe" : "team presentation"} | EPFL Sustainable Innovation Challenge`;
     }, [])
 
     function saveAndChangeLang(language) {
@@ -45,7 +46,7 @@ function SelectedTeam() {
             <section className="main">
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                 <main>
-                    this is the selected team page with id '{teamId}'
+                    
                 </main>
             </section>
             <Footer lang={lang} saveAndChangeLang={saveAndChangeLang} />
@@ -53,4 +54,4 @@ function SelectedTeam() {
     )
 }
 
-export default SelectedTeam
+export default TeamPresentation

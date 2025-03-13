@@ -1,13 +1,13 @@
-import Ecenaz from '../assets/sic/members/ecenaz.png'
-import Leo from '../assets/sic/members/leo.png'
-import Selin from '../assets/sic/members/selin.png'
-import Isaure from '../assets/sic/members/isaure.png'
-import Hadrien from '../assets/sic/members/hadrien.png'
-import Cyril from '../assets/sic/members/cyril.png'
-import Basile from '../assets/sic/members/basile.png'
-import Stelios from '../assets/sic/members/stelios.png'
-import Victor from '../assets/sic/members/victor.png'
-import Laurene from '../assets/sic/members/laurene.png'
+import Ecenaz from '../../assets/sic/members/ecenaz.png'
+import Leo from '../../assets/sic/members/leo.png'
+import Selin from '../../assets/sic/members/selin.png'
+import Isaure from '../../assets/sic/members/isaure.png'
+import Hadrien from '../../assets/sic/members/hadrien.png'
+import Cyril from '../../assets/sic/members/cyril.png'
+import Basile from '../../assets/sic/members/basile.png'
+import Stelios from '../../assets/sic/members/stelios.png'
+import Victor from '../../assets/sic/members/victor.png'
+import Laurene from '../../assets/sic/members/laurene.png'
 
 const sic_members = [
     {

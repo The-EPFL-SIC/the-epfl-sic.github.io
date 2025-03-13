@@ -4,7 +4,7 @@ import Footer from '../../components/Footer'
 import ProfileCard from '../../components/ProfileCard'
 import '../../styles/pages/Members.css'
 
-import sic_members from '../../data/sic_members'
+import sic_members from '../../data/sic/sic_members'
 
 function Members() {
     // the default language of the website is english

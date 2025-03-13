@@ -6,18 +6,19 @@ import '../styles/global.css'
 import '../styles/pages/Index.css'
 
 import ticket_icon from '../assets/icons/ticket.png'
-import logo_white_sic from '../assets/sic/logo_2_blanc.svg'
 import logo_epfl from '../assets/logo/logo_epfl.png'
 
 import competition_actors from '../assets/sic/informations/competition_actors_2.svg'
 import event_poster_en from '../assets/sic/informations/event_poster_en.png'
 import event_poster_fr from '../assets/sic/informations/event_poster_fr.png'
 
-import partner_associations from '../data/partners_associations'
-import partner_associations_and_commissions from '../data/partners_commissions'
-import principal_partners from '../data/partners_principal'
+import partners_principal from '../data/partners/partners_principal'
+import partner_other from '../data/partners/partners_other'
+import partner_associations from '../data/partners/partners_associations'
+
 
 import is_event_happening from '../is_event_happening';
+import principal_partners from '../data/partners/partners_principal';
 
 function Index() {
     // the default language of the website is english
@@ -135,13 +136,13 @@ function Index() {
             "FR": "Partenaires principaux",
             "EN": "Principal partners"
         },
+        "partner-other": {
+            "FR": "Autres partenaires",
+            "EN": "Other partners"
+        },
         "partner-association": {
             "FR": "Associations partenaires",
             "EN": "Partner associations"
-        },
-        "partner-association-and-commission": {
-            "FR": "Associations et commissions partenaires",
-            "EN": "Partner associations and commissions"
         }
     }
 
@@ -149,8 +150,7 @@ function Index() {
         <>
             <section className="welcome-page">
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
-                <article>
-                    {
+                {
                         (is_event_happening)? <a className="get-your-ticket" href="https://www.eventbrite.com/e/epfl-sustainable-innovation-challenge-tickets-1248211717849?aff=oddtdtcreator">
                             <img src={ticket_icon} alt="ticket"/>
                             <div>
@@ -159,14 +159,14 @@ function Index() {
                                 {INDEX_ELEMENTS_LOCALE["tickets"][lang]}
                             </div>
                         </a> : null
-                    }
+                }
+                <article>
                     <h1>
-                        EPFL<span className="special-char">'</span>s <br/>
+                        The <br/>
                         Sustainable <br/>
                         Innovation <br/>
                         Challenge <br/>
                         <img className="first-page-logo" src={logo_epfl} alt="epfl logo" />
-                        <img className="first-page-logo" src={logo_white_sic} alt="logo sic" />
                     </h1>
                     <p>
                         {INDEX_ELEMENTS_LOCALE["sic-presentation"][lang]}<br/>
@@ -232,17 +232,17 @@ function Index() {
                         </a>
                     ))}
                 </div>
-                <h2> {INDEX_ELEMENTS_LOCALE["partner-association"][lang]} </h2> 
+                <h2> {INDEX_ELEMENTS_LOCALE["partner-other"][lang]} </h2> 
                 <div className="gallery">
-                    {partner_associations.map(partner => (
+                    {partner_other.map(partner => (
                         <a key={"partner" + partner["name"]} href={partner["link"]}>
                             <img src={partner["logo"]} alt={partner["name"]} />
                         </a>
                     ))}
                 </div>
-                <h2> {INDEX_ELEMENTS_LOCALE["partner-association-and-commission"][lang]} </h2> 
+                <h2> {INDEX_ELEMENTS_LOCALE["partner-association"][lang]} </h2> 
                 <div className="gallery">
-                    {partner_associations_and_commissions.map(partner => (
+                    {partner_associations.map(partner => (
                         <a key={"sponsor" + partner["name"]} href={partner["link"]}>
                             <img src={partner["logo"]} alt={partner["name"]} />
                         </a>

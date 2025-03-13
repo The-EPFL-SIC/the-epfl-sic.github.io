@@ -9,7 +9,7 @@ function Speaker() {
 
     useEffect(function() {
         window.scrollTo(0, 0);
-        document.title = `${(lang === "FR")? "EMPTY_PAGE_TITLE_FR" : "EMPTY_PAGE_TITLE_EN"} | EPFL Sustainable Innovation Challenge`;
+        document.title = `${(lang === "FR")? "intervenant" : "speaker"} | EPFL Sustainable Innovation Challenge`;
     }, [])
 
     function saveAndChangeLang(language) {

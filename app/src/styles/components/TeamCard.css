@@ -1,0 +1,13 @@
+.team-card {
+    border: 3px solid white;
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    background-color: rgb(180, 207, 183);
+    color: black;
+    text-decoration: none;
+}
+
+.team-card p {
+    text-align: left;
+}

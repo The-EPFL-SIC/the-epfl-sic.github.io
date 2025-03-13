@@ -3,8 +3,8 @@
 }
 
 .category-header {
-    width: 95%;
-    max-width: 1500px;
+    width: 100%;
+    max-width: 2000px;
     min-width: 300px;
     margin-inline: auto;
     display: flex;
@@ -25,10 +25,8 @@
     -webkit-user-select: none;
 }
 
-.profile-gallery {    
-    width: 70%;
-    max-width: 1200px;
-    min-width: 300px;
+.profile-gallery {   
+    max-width: 2000px;
     margin-inline: auto;
     display: flex;
     flex-direction: row;

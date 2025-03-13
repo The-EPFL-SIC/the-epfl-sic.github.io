@@ -33,3 +33,15 @@ body {
 h1 a {
     color: white;
 }
+
+.gallery {
+    max-width: 2000px;
+    padding-left: 30px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 3rem;
+}

@@ -1,7 +1,14 @@
 import { useState, useEffect } from 'react'
 import '../../styles/pages/Contact.css'
+
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import TeamCard from '../../components/TeamCard'
+import JuryCard from '../../components/JuryCard'
+
+import selected_teams from '../../data/exposition/selected_teams'
+import honorific_teams from '../../data/exposition/honorific_teams'
+import jury from '../../data/exposition/the_jury'
 
 function Challenge() {
     // the default language of the website is english
@@ -39,8 +46,8 @@ function Challenge() {
             "EN": "Selected Teams",
             "FR": "Équipes sélectionnées"
         },
-        "honorary-teams": {
-            "EN": "Honorary teams",
+        "honorific-teams": {
+            "EN": "Honorific teams",
             "FR": "Sélections honorifiques"
         },
         "introduction-to-jury-1": {
@@ -63,12 +70,12 @@ function Challenge() {
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                 <main>
                     <h2>{CURRENT_EDITION_INFORMATIONS_ELEMENTS_LOCALE["selected-teams"][lang]}</h2>
-                    <div>
-
+                    <div className="gallery">
+                        {selected_teams.map(selected_team => <TeamCard is_honorific={false} team_data={selected_team}/>)}
                     </div>
-                    <h2>{CURRENT_EDITION_INFORMATIONS_ELEMENTS_LOCALE["honorary-teams"][lang]}</h2>
-                    <div>
-
+                    <h2>{CURRENT_EDITION_INFORMATIONS_ELEMENTS_LOCALE["honorific-teams"][lang]}</h2>
+                    <div className="gallery">
+                        {honorific_teams.map(honorific_team => <TeamCard is_honorific={true} team_data={honorific_team}/>)}
                     </div>
                     <h2>{CURRENT_EDITION_INFORMATIONS_ELEMENTS_LOCALE["jury"][lang]}</h2>
                     <p>
@@ -76,8 +83,8 @@ function Challenge() {
                         {CURRENT_EDITION_INFORMATIONS_ELEMENTS_LOCALE["introduction-to-jury-2"][lang]}<br/>
                         {CURRENT_EDITION_INFORMATIONS_ELEMENTS_LOCALE["introduction-to-jury-3"][lang]}<br/>
                     </p>
-                    <div>
-
+                    <div className="gallery">
+                        {jury.map(jury_member=> <JuryCard jury_data={jury_member}/>)}
                     </div>
                 </main>
             </section>

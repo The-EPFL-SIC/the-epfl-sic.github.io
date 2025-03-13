@@ -1,6 +1,11 @@
 import { useState, useEffect } from 'react'
+
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import SpeakerCard from '../../components/SpeakerCard'
+
+import speakers from '../../data/activities/speakers'
+
 
 function Activities() {
     // the default language of the website is english
@@ -50,15 +55,15 @@ function Activities() {
                 <Header lang={lang} saveAndChangeLang={saveAndChangeLang} />
                 <main>
                     <h2>{ACTIVITIES_PAGE_ELEMENTS_LOCALE["speakers"][lang]}</h2>
-                    <div>
-
+                    <div className="gallery">
+                        {speakers.map(speaker => <SpeakerCard speaker_data={speaker} />)}
                     </div>
                     <h2>{ACTIVITIES_PAGE_ELEMENTS_LOCALE["workshops"][lang]}</h2>
-                    <div>
+                    <div className="gallery">
 
                     </div>
                     <h2>{ACTIVITIES_PAGE_ELEMENTS_LOCALE["stands"][lang]}</h2>
-                    <div>
+                    <div className="gallery">
 
                     </div>
                 </main>

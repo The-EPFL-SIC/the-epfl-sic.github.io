@@ -24,7 +24,7 @@ import ChallengeInscription from './pages/between_events/ChallengeInscription'
 import Schedule from './pages/during_event/Schedule'
 import  Challenge from './pages/during_event/Challenge'
 import Activities from './pages/during_event/Activities'
-import SelectedTeam from './pages/during_event/SelectedTeam'
+import TeamPresentation from './pages/during_event/TeamPresentation'
 import Speaker from './pages/during_event/Speaker'
 
 // a boolean to multiplex between the two version of the site
@@ -49,7 +49,8 @@ root.render(
               <Route path="/event-schedule" element={<Schedule />} />,
               <Route path="/activities" element={<Activities />} />,
               <Route path="/the-challenge" element={<Challenge />} />,
-              <Route path="/selected-team/:teamId" element={<SelectedTeam />} />,
+              <Route path="/selected-team/:teamId" element={<TeamPresentation />} />,
+              <Route path="/honorific-team/:teamId" element={<TeamPresentation />} />,
               <Route path="/speaker/:speakerId" element={<Speaker />} />,
             ]:
             [
